@@ -1,0 +1,78 @@
+- var pageTitl = "Blog";
+//DOCTYPE html
+html(lang="en")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    //Start  breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='Index.html') Home
+          li.breadcrumb-item.active(aria-current='page') Blog
+    //End breadcrumb
+    // Start Blog
+    section.Blog-page.Blog
+      h3.text-center  Our Blog 
+      p.text-center Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, sapiente.
+      .container
+        .row.row-cols-1.row-cols-md-2
+          .col.mb-4
+            .card
+              .image
+                img.card-img-top(src='images/designZ.png', alt='...')
+                .date
+                  p 8
+                  span Des
+              .card-body
+                h5.card-title The History and the Hype
+                p.card-text
+                  | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                a.read-more(href="BlogDetail.html") Read More 
+          .col.mb-4
+            .card
+              .image
+                img.card-img-top(src='images/002.png', alt='...')
+                .date
+                  p 31
+                  span Oct
+              .card-body
+                h5.card-title best facial cream ever
+                p.card-text
+                  | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                a.read-more(href="BlogDetail.html") Read More 
+          .col.mb-4
+            .card
+              .image
+                img.card-img-top(src='images/3373652.png', alt='...')
+                .date
+                  p 2
+                  span Jun
+              .card-body
+                h5.card-title best mackup secret
+                p.card-text
+                  | This is a longer card with supporting text below as a natural lead-in to additional content.
+                a.read-more(href="BlogDetail.html") Read More 
+          .col.mb-4
+            .card
+              .image
+                img.card-img-top(src='images/zxc.png', alt='...')
+                .date
+                  p 20
+                  span Feb
+              .card-body
+                h5.card-title women secret beauty tips
+                p.card-text
+                  | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                a.read-more(href="BlogDetail.html") Read More 
+        
+    // End Blog
+
+    //Start Footer
+    include include/Footer.pug
+    include include/model.pug
+    include include/script.pug

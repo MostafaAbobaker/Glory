@@ -1,0 +1,98 @@
+//Start Top Header
+header.top-header
+  .container
+    .row
+      .col-lg-7
+        ul.list-unstyled.info-data
+          li.info
+            //i.fas.fa-phone-alt 
+            span.pe-7s-call
+            span.text 
+              |  (0096) 
+              |  2777418060
+          li.info
+            //i.fas.fa-envelope
+            span.pe-7s-mail
+            span.text 
+              |   info@deadseaglory.net
+          li.social-media
+            a(href="")
+              i.fab.fa-facebook-f.fa-fw
+            a(href="")
+              i.fab.fa-instagram.fa-fw
+            a(href="")
+              i.fab.fa-twitter.fa-fw
+            a(href="")
+              i.fab.fa-youtube.fa-fw
+            a(href="")
+              i.fab.fa-pinterest.fa-fw 
+        
+
+      .col-lg-4
+        ul.list-unstyled.control
+          li.lang.drob
+            a(href="#") 
+              include EnglishIcon.pug 
+              | English
+            ul.list-unstyled.drob-down
+              li
+                a(href="#")
+                  include EnglishIcon.pug 
+                  | English 
+              li
+                a(href="#")
+                  include ArabicIcon.pug 
+                  | Arabic 
+          li.Setting.drob
+            a(href="#") 
+              //i.fas.fa-cog.fa.fw
+              span.pe-7s-config
+              | Setting
+            ul.list-unstyled.drob-down
+              li
+                a(href="#") my account
+              li
+                a(href="#") my favorite                                 
+              li
+                a(href="#") 
+                  i.fas.fa-sign-out-alt.fa-fw
+                  |  sign out                          
+          //-li.login
+            a(href="Login.html") 
+              i.fas.fa-sign-in-alt.fa-fw 
+              |  Sign In
+//End Top Header
+// Start Nav Bar
+nav.navbar.navbar-expand-lg.navbar-light
+  .container
+    a.navbar-brand(href='index.html')
+      img(src="../../images/GloryLogo2.png", alt="" width='150') 
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li(class = pageTitl === "Home" ? "nav-item  active" : " nav-item " )
+          a.nav-link(href='index.html')
+            | Home 
+            span.sr-only (current)
+        li(class = pageTitl === "AboutUs" ? "nav-item  active" : " nav-item " )
+          a.nav-link(href='About.html') About Us
+        li(class = pageTitl === "products" ? "nav-item  active" : " nav-item " )
+          a.nav-link(href='products.html') products
+        li(class = pageTitl === "clinical" ? "nav-item  active" : " nav-item " )
+          a.nav-link(href='clinical.html') clinical
+        li(class = pageTitl === "gifts" ? "nav-item  active" : " nav-item " )
+          a.nav-link(href='gifts.html') gifts
+        li(class = pageTitl === "Blog" ? "nav-item  active" : " nav-item " )
+          a.nav-link(href='Blog.html') Blog
+        li(class = pageTitl === "contact" ? "nav-item  active" : " nav-item " )
+          a.nav-link(href='contactUs.html') contact us
+        li.nav-item.basket
+          a.nav-link.shopping-cart(href='#') 
+            span.pe-7s-cart
+              span.badge.badge-success 3
+
+      
+    
+
+// End Nav Bar

@@ -1,0 +1,95 @@
+.card-ship {
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+  @media (max-width: 991.98px) {
+    margin-bottom: 10px;
+  }
+  &:hover {
+    box-shadow: 0 0 10px rgba(#000,0.3);
+    border-color:  #FDB846;
+  }
+  .image {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  
+  .card-ship-body {
+    padding: 10px;
+    .prand  {
+      font-weight: 300;
+      font-size: 1.2em;
+    }
+    .name-prodect {
+      font-weight: 600;
+      text-decoration: none;
+      color: #212121;
+      display: block;
+    }
+    .prise {
+      display: flex;
+      width: 80%;
+      margin: 10px auto;
+      justify-content: space-around;
+      .old {
+        color: #999;
+        font-size: 90%;
+        
+      }
+      .new {
+        font-weight: 600;
+        font-size: 120%;
+        color: #e83e8c;
+      }
+    }
+  
+  }
+  .add-Card {
+    margin-bottom: 10px;
+    position: relative;
+    left: 50%;
+    margin-left: auto;
+    transform: translateX(-50%);
+    
+    span.pe-7s-cart {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-size: 25px;
+      z-index: 9;
+
+    }
+    &::before {
+      display: none;
+    }
+  }
+  &.list {
+    display: flex;
+    .image {
+      width: 20%;
+    }
+    .card-ship-body {
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      .info-card-ship {
+        width: 50%;
+      }
+      .prise {
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .add-Card {
+        left: 25%;
+        transform: translateX(0);
+        margin: auto;
+        text-align: center;
+      }
+    }
+  }
+}

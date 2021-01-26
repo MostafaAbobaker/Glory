@@ -1,0 +1,95 @@
+@import "content/header";
+@import "content/footer";
+@import "content/navbar";
+@import "content/home";
+@import "content/model";
+@import "content/Register";
+@import "content/item";
+
+@import "Page/home";
+@import "Page/login";
+@import "Page/about";
+@import "Page/products";
+@import "Page/gifts";
+@import "Page/clinical";
+@import "Page/blog";
+@import "Page/contactUs";
+
+
+
+body {
+  
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Castoro', serif;
+
+}
+/* Start Breadcrumb Nav */
+.breadcrumb-nav {
+  margin-top: 2px;
+  background-color: #F9B645;
+  border-bottom: 1px solid rgba(#000,0.1);
+  .breadcrumb {
+    margin-bottom: 0;
+    background-color: transparent;
+    .breadcrumb-item {
+      a {
+        color: #3098d4;
+        font-weight: bold;
+      }
+      &.active {
+        color: #fff;
+        &::before {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+}
+/* End Breadcrumb Nav */
+
+/* Start Button Read More */
+a.read-more {
+  text-decoration: none;
+  background-color: #F9B645;
+  color: #ffffff;
+  padding: 10px 30px;
+  padding-right: 70px;
+  border-radius: 5px;
+  margin-left: 40px;
+  font-style: italic;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 5px 0 0px #b78735, 0 5px 5px rgba(0, 0, 0, 0.5);
+  &::after {
+    content: "";
+    position: absolute;
+    top: -30%;
+    right: -25%;
+    background-color: #3098d4;
+    border-radius: 50%;
+    width: 60%;
+    height: 180%;
+    transform: rotate(76deg);
+    transform: rotate(17deg);
+    border: 5px solid #fff;
+    border-bottom: none;
+  }
+  &::before {
+    content: '\f141';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    right: 15px;
+    position: absolute;
+    z-index: 2;
+    font-style: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &:hover {
+    box-shadow: 0px 2px 0 0px #b78735, 0 0px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+/* End Button Read More */

@@ -1,0 +1,167 @@
+- var pageTitl = "AboutUs";
+//DOCTYPE html
+html(lang="en")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    //Start  breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='Index.html') Home
+          li.breadcrumb-item.active(aria-current='page') About Us
+    //End breadcrumb
+    // Start About
+    section.About-page
+      .about-us
+        h3.text-center  Our About 
+        p.text-center Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, sapiente.
+        .container
+          .row
+            .col-lg-12
+              .About-page-box.mt-5
+                .container-fluid
+                  .row
+                    .col-lg-8
+                      .About-page-info
+                        h2 AMAN EST.
+                        h4.pl-2 FOR NATURAL & HERBAL PRODUCTS
+                        p.pl-3 Our company was established in 1990 the company main activity is the production of high quality Dead Sea products and it was the first company that produced Dead Sea products in Jordan.
+                        p.pl-3 The factory and head office is located in salt – Jordan
+                        p.pl-3 The secret healing powers of the Dead Sea were discovered at earlier time by the COLPATRA and other beauty seekers, and nowadays proven by scientific experiments and medical research conducted by physicians and beauty experts in Jordan.
+                        p.pl-3 As well as an esteemed group of doctors specialized in various fields of medicine, thoroughly believed that the Dead Sea possessed extra ordinary healing powers due to its high content of salts, minerals and the nutrients contained within. Its water contains more than 35 different types of minerals that are essential for the body skin including Magnesium, Calcium, Potassium, Bromine, Sulfur and Iodine.
+                        p.pl-3 Nowadays our company manufactures many natural Dead Sea products under various brands
+                        p.pl-3 Some our best products are represented by:
+                        p.pl-3 Glory, Joon, Solution and beauty star.
+                        .row
+                          .col-lg-6
+                            h4  Our vision: 
+                            p.p-3 As a Jordanian company our vision is to convey the heat rich of the Dead Sea and its medical and clinical benefits from the kingdom of Jordan to all the beauty, health and medical benefits seekers all over the world.
+                          .col-lg-6
+                            h4  Our mission: 
+                            p.p-3 To provide beauty, health and medical benefits with best quality Dead Sea products to ensure that they obtain the targeted natural cosmetics, medical and health aim.
+
+                    .col-lg-4
+                      .image
+                        img(src="../images/business-structure-which-type-is-best-for-your-business.png", alt="")
+            
+        .Certificates
+          h3.text-center 
+            i.fas.fa-graduation-cap.fa-fw
+            |  Our Certificates
+          p.text-center Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, commodi!
+          .container
+            .row
+              .col-lg-3
+                .imagez
+                  img(src="images/certicate/GMP-Certificate1-198x300.jpg", alt="")
+              .col-lg-3
+                .imagez.Stamp
+                  img(src="images/certicate/GMP-Logo3-300x209.jpg", alt="")
+              .col-lg-6
+                .Certificates-info
+                  .image-group.text-center
+                    .images
+                      img(src="../images/certicate/EuroFlag.jpg", alt="")
+                    .images
+                      img(src="../images/certicate/JEDCO.png", alt="")
+                  p “This publication has been produced with the assistance of the European Union in cooperation with Jordan Enterprise Development Corporation” to be added below the logos.
+                  p “The contents of this publication are the sole responsibility of Aman Abdel Razzaq Slameh   AlRahahleh Establishment and can in no way be taken to reflect the views of the European Union & Jordan Enterprise Development Corporation.”
+                  p The European Union is made up of 27 Member States who have decided to gradually link together their know-how, resources and destinies. Together, during a period of enlargement of 50 years, they have built a zone of stability, democracy and sustainable development whilst maintaining cultural diversity, tolerance and individual freedoms. The European Union is committed to sharing its achievements and its values with countries and peoples beyond its borders”.
+        .number-Products
+          .container
+            .row
+              .col-lg-3
+                .Products-box.text-center
+                  h2 2300+
+                  p Products
+              .col-lg-3
+                .Products-box.text-center
+                  h2 108
+                  p Brands
+              .col-lg-3
+                .Products-box.text-center
+                  h2 32
+                  p Partners
+              .col-lg-3
+                .Products-box.text-center
+                  h2 618+
+                  p Customers
+        .Owners
+          h3.text-center  Our Owners 
+          p.text-center Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, sapiente. Our Owners
+          .container
+            .row
+              .col-lg-3.mt-5.mb-5
+                .card
+                  .card-header.card-header-image
+                    a(href='#pablo')
+                      img.img(src='images/team/team-23.jpg')
+                  .card-body
+                    h4.card-title Alec Thompson
+                    h6.card-category.text-gray CEO / Co-Founder
+                  .card-footer
+                    a(href='#')
+                      i.fab.fa-twitter-square.fa-2x
+                    a(href='#')
+                      i.fab.fa-facebook-square.fa-2x
+                    a(href='#')
+                      i.fab.fa-google-plus-square.fa-2x
+              .col-lg-3.mt-5.mb-5
+                .card
+                  .card-header.card-header-image
+                    a(href='#pablo')
+                      img.img(src='images/team/istockphoto-1187980751-612x612.jpg')
+                  .card-body
+                    h4.card-title Alec Thompson
+                    h6.card-category.text-gray CEO / Co-Founder
+                  .card-footer
+                    a(href='#')
+                      i.fab.fa-twitter-square.fa-2x
+                    a(href='#')
+                      i.fab.fa-facebook-square.fa-2x
+                    a(href='#')
+                      i.fab.fa-google-plus-square.fa-2x
+              .col-lg-3.mt-5.mb-5
+                .card
+                  .card-header.card-header-image
+                    a(href='#pablo')
+                      img.img(src='images/team/avatar_user_36692_1511968805.jpg')
+                  .card-body
+                    h4.card-title Alec Thompson
+                    h6.card-category.text-gray CEO / Co-Founder
+                  .card-footer
+                    a(href='#')
+                      i.fab.fa-twitter-square.fa-2x
+                    a(href='#')
+                      i.fab.fa-facebook-square.fa-2x
+                    a(href='#')
+                      i.fab.fa-google-plus-square.fa-2x
+              .col-lg-3.mt-5.mb-5
+                .card
+                  .card-header.card-header-image
+                    a(href='#pablo')
+                      img.img(src='images/team/istockphoto-1187980751-612x612.jpg')
+                  .card-body
+                    h4.card-title Alec Thompson
+                    h6.card-category.text-gray CEO / Co-Founder
+                  .card-footer
+                    a(href='#')
+                      i.fab.fa-twitter-square.fa-2x
+                    a(href='#')
+                      i.fab.fa-facebook-square.fa-2x
+                    a(href='#')
+                      i.fab.fa-google-plus-square.fa-2x
+
+
+
+    // End About
+
+    //Start Footer
+    include include/Footer.pug
+    include include/model.pug
+    include include/script.pug

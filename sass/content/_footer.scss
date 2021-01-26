@@ -1,0 +1,134 @@
+/* Start Footer */
+footer.footer {
+  padding: 40px 0;
+  //background-color: #f0f0f0;
+  box-shadow: 0 -2px 5px rgba(#000,0.1);
+  h5 {
+    color: #3098D4;
+  }
+  .info {
+    border-right: 1px solid rgba(#000,0.1);
+    img {
+      margin-bottom: 20px;
+    }
+    div {
+      margin-bottom: 10px;
+      text-indent: 5px;
+      color: #666;
+      span {
+        display: inline-block;
+        margin-right: 5px;
+        //font-weight: bold;
+        font-size: 18px;
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+  .links {
+    border-right: 1px solid rgba(#000,0.1);
+    .link-nav {
+      li {
+        a {
+          text-decoration: none;
+          color: #666; 
+          position: relative;
+          transition: all 0.3s ease-in-out;
+          display: block;
+          &::before {
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: relative;
+            left: -5px;
+          }
+          &:hover {
+            color: #212121;
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+    .social-media {
+      display: flex;
+      max-width: 80%;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+      li {
+        margin-bottom: 5px;
+        margin-right: 5px;
+        a {
+          text-decoration: none;
+          color: #fff;
+          width: 30px;
+          height: 30px;
+          background-color: #666;
+          border-radius: 50%;
+          padding: 5px;
+          display: flex;
+          text-align: center;
+          align-items: center;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            background-color: #FDB846;
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+  .contact-send {
+    p {
+      margin-bottom: 0;
+      color: #666;
+      font-size: .9em;
+    }
+    .input-group {
+      margin-bottom: 5px;
+      .form-control {
+        border-radius: 0;
+      }
+      .input-group-text {
+        background-color: #3098D4;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: #2b84b7;
+        }
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+    .sport, .time {
+      span {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 18px;
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+}
+/* End Footer */
+/* Start Copy Right */
+.Copy-Right {
+  
+  background-color: fff;
+  .container {
+    border-top: 1px solid rgba(#000,0.1);
+    padding: 10px;
+  }
+  p {
+    margin: 0;
+    font-size: .9em;
+    color: #555;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
+/* End Copy Right */

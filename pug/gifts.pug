@@ -1,0 +1,39 @@
+- var pageTitl = "gifts";
+//DOCTYPE html
+html(lang="en")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
+    //end Header
+    //Start  breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='Index.html') Home
+          li.breadcrumb-item.active(aria-current='page') Gifts
+    //End breadcrumb
+    // Start gifts
+    section.gifts-page
+      .container
+        .row.justify-content-center
+          .col-lg-5
+            .image  
+              a(href="images/glory_gift.jpg" data-fancybox="gallery")
+                img.w-100(src="images/glory_gift.jpg", alt="")
+          .col-lg-1
+          .col-lg-5
+            .image 
+              a(href="images/joon_gift.jpg" data-fancybox="gallery")
+                img.w-100(src="images/joon_gift.jpg", alt="")
+            
+    // End gifts
+
+    //Start Footer
+    include include/Footer.pug
+    include include/model.pug
+    include include/script.pug
+    script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")

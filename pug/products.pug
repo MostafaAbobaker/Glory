@@ -1,0 +1,129 @@
+- var pageTitl = "products";
+//DOCTYPE html
+html(lang="en")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    //Start  breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='Index.html') Home
+          li.breadcrumb-item.active(aria-current='page') Shop Products
+
+    //End breadcrumb
+    // Start products
+    section.products-page
+      .container
+        .row
+          .col-lg-3
+            aside.aside
+              .Brands
+                h3 Brands
+                .form-group.form-check
+                  input#Glory.form-check-input(type='checkbox')
+                  label.form-check-label(for='Glory') Glory
+                .form-group.form-check
+                  input#Joon.form-check-input(type='checkbox')
+                  label.form-check-label(for='Joon') Joon 
+              .Brands
+                h3 Categories
+                .form-group.form-check
+                  input#Cream.form-check-input(type='checkbox')
+                  label.form-check-label(for='Cream') Cream
+                .form-group.form-check
+                  input#Oil.form-check-input(type='checkbox')
+                  label.form-check-label(for='Oil') Oil 
+                .form-group.form-check
+                  input#Hair.form-check-input(type='checkbox')
+                  label.form-check-label(for='Hair') Hair 
+                .form-group.form-check
+                  input#Body.form-check-input(type='checkbox')
+                  label.form-check-label(for='Body') Body 
+                .form-group.form-check
+                  input#Mask.form-check-input(type='checkbox')
+                  label.form-check-label(for='Mask') Mask 
+                .form-group.form-check
+                  input#Shampoo.form-check-input(type='checkbox')
+                  label.form-check-label(for='Shampoo') Shampoo 
+                .form-group.form-check
+                  input#Shower.form-check-input(type='checkbox')
+                  label.form-check-label(for='Shower') Shower  
+                .form-group.form-check
+                  input#soap.form-check-input(type='checkbox')
+                  label.form-check-label(for='soap') Soap  
+              .Brands
+                h3 Size
+                .form-group.form-check
+                  input#Small.form-check-input(type='checkbox')
+                  label.form-check-label(for='Small') Small
+                .form-group.form-check
+                  input#Medium.form-check-input(type='checkbox')
+                  label.form-check-label(for='Medium') Medium 
+                .form-group.form-check
+                  input#Large.form-check-input(type='checkbox')
+                  label.form-check-label(for='Large') Large 
+                .form-group.form-check
+                  input#50ml.form-check-input(type='checkbox')
+                  label.form-check-label(for='50ml') 50ml 
+                .form-group.form-check
+                  input#100ml.form-check-input(type='checkbox')
+                  label.form-check-label(for='100ml') 100ml 
+                .form-group.form-check
+                  input#200ml.form-check-input(type='checkbox')
+                  label.form-check-label(for='200ml') 200ml 
+                .form-group.form-check
+                  input#400ml.form-check-input(type='checkbox')
+                  label.form-check-label(for='400ml') 400ml  
+                
+
+
+          .col-lg-9
+            #ourProducts.our-Products
+              .container-fluid
+                .row
+                  .col-lg-12
+                    .filter-icon
+                      .icon-group
+                        #rows.icon
+                          i.fas.fa-th-list.fa-fw.fa-lg
+                        #grad.icon.active
+                          i.fas.fa-th-large.fa-fw.fa-lg
+                      .filter-sort
+                        .input-group
+                          .input-group-prepend
+                            label.input-group-text(for='inputGroupSelect01') Sort By: 
+                          select#inputGroupSelect01.custom-select
+                            option(selected='') Best Match
+                            option(value='1') Popularity
+                            option(value='2') Top Rated
+                            option(value='3') Price: Low to High
+                            option(value='3') Price: High to Low
+
+                  - var n = 0;
+                    while n < 53
+                      div(class = n < 26 ? "Joon col-lg-4" : "Glory col-lg-4")
+                        .card-ship
+                          .image
+                            img(src='images/glory/Filter/' + ++n +'.png', alt='')
+                          .card-ship-body
+                            .info-card-ship
+                              .prand.text-center #{n < 27 ? 'Joon'  : 'Glory'} 
+                              a.name-prodect.text-center(href="") Jasmine Flower Perfume
+                            .prise.text-center
+                              .old
+                                del $ 69.99
+                              .new $ 50.00
+                            a.read-more.add-Card(href="#") Add to Card
+                              span.pe-7s-cart
+                  
+    // End products
+
+    //Start Footer
+    include include/Footer.pug
+    include include/model.pug
+    include include/script.pug

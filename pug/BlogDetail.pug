@@ -1,0 +1,62 @@
+- var pageTitl = "Blog";
+//DOCTYPE html
+html(lang="en")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    //Start  breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='Index.html') Home
+          li.breadcrumb-item
+            a(href='Blog.html') Blog
+          li.breadcrumb-item.active(aria-current='page') Blog Detail
+    //End breadcrumb
+    // Start Blog
+    section.Blog-page.Blog
+      //h3.text-center  Best Mackup Secret
+      //p.text-center Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, sapiente.
+      .container
+        .row
+          .col-lg-12
+            .card
+              .image
+                img.card-img-top(src='images/3373652.png ', alt='...')
+                .date
+                  p 8
+                  span Des
+              .card-body
+                h5.card-title The History and the Hype
+                  p.blockquote-footer.mt-3
+                    span.p-5
+                      i.fas.fa-calendar-alt
+                      |  8 Des 2020
+                    span
+                      i.fas.fa-user-edit
+                      |  by Melissa Jones
+
+                p.card-text
+                  | There boluptatum deleniti atque corrupti sdolores et quas molestias cepturi sint eca itate non similique sunt in culpa modi tempora incidunt obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure corrupti sdolores et quas molestias cepturi sint eca itate non similique sunt in culpa modi tempora incidunt obtain pain of itself, because it is pain
+                p.card-text
+                  | There boluptatum deleniti atque corrupti sdolores et quas molestias cepturi sint eca itate non similique sunt in culpa modi tempora incidunt obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure corrupti sdolores et quas molestias cepturi sint eca itate non similique sunt in culpa modi tempora incidunt obtain pain of itself, because it is pain
+          
+                .row.justify-content-center
+                  .col-lg-4
+                    .image
+                      img.w-100.img-thumbnail(src="images/792855.png", alt="")
+                  .col-lg-4
+                    .image
+                      img.w-100.img-thumbnail(src="images/Body.png", alt="")
+                p.card-text.mt-3
+                  | There boluptatum deleniti atque corrupti sdolores et quas molestias cepturi sint eca itate non similique sunt in culpa modi tempora incidunt obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure corrupti sdolores et quas molestias cepturi sint eca itate non similique sunt in culpa modi tempora incidunt obtain pain of itself, because it is pain      
+    // End Blog
+
+    //Start Footer
+    include include/Footer.pug
+    include include/model.pug
+    include include/script.pug

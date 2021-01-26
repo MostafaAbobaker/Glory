@@ -1,0 +1,314 @@
+- var pageTitl = "Home";
+//DOCTYPE html
+html(lang="en")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    //Start Main Slider
+    section.slide
+      #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+          li(data-target='#carouselExampleIndicators', data-slide-to='1')
+          li(data-target='#carouselExampleIndicators', data-slide-to='2')
+          //-li(data-target='#carouselExampleIndicators', data-slide-to='3')
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100(src='../images/design2.png', alt='...')
+            .carousel-caption.d-none.d-md-block
+              h5.wow.animate__fadeInRight.animated( data-wow-duration="1s") Dead Sea
+              p.wow.animate__fadeInUp.animated( data-wow-duration="1s") Nulla vitae elit libero, a pharetra augue mollis interdum.
+              a.read-more.wow.animate__fadeInUpBig.animated(href="" data-wow-duration="1s") Read More  
+          .carousel-item
+            img.d-block.w-100(src='../images/design3.png', alt='...')
+            .carousel-caption.d-none.d-md-block
+              h5.wow.animate__fadeInRight.animated( data-wow-duration="1s") Dead Sea
+              p.wow.animate__fadeInUp.animated( data-wow-duration="1s") Nulla vitae elit libero, a pharetra augue mollis interdum.
+              a.read-more.wow.animate__fadeInUpBig.animated(href="" data-wow-duration="1s") Read More  
+          .carousel-item 
+            img.d-block.w-100(src='../images/a.png', alt='...')
+            .carousel-caption.d-none.d-md-block
+              h5.wow.animate__fadeInRight.animated( data-wow-duration="1s") Dead Sea
+              p.wow.animate__fadeInUp.animated( data-wow-duration="1s") Nulla vitae elit libero, a pharetra augue mollis interdum.
+              a.read-more.wow.animate__fadeInUpBig.animated(href="" data-wow-duration="1s") Read More  
+          //-.carousel-item
+            img.d-block.w-100(src='../images/4223997.png', alt='...')
+            .carousel-caption.d-none.d-md-block
+              h5.wow.animate__fadeInRight.animated( data-wow-duration="1s") cosmetics makeup
+              p.wow.animate__fadeInUp.animated( data-wow-duration="1s") Nulla vitae elit libero, a pharetra augue mollis interdum.
+              a.read-more.wow.animate__fadeInUpBig.animated(href="" data-wow-duration="1s") Read More  
+        a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
+
+    //End Main Slider
+    //Start About
+    section.about
+      .container
+        .row
+          .col-lg-12
+            .about-box
+              .row
+                .col-lg-5
+                  .image
+                    img.wow.animate__fadeInRight.animated(src="../images/84 [Converted].png", alt="" data-wow-duration="2s" )
+                .col-lg-7
+                  .about-info
+                    h2.read-more.wow.animate__fadeInUpBig.animated( data-wow-duration="1s") About Us
+                    .main-info.read-more.wow.animate__fadeInUpBig.animated( data-wow-duration="1s")
+                      | We have a lot of experience in the field of cosmetics in the international market for more than 10 years
+                    p.info.read-more.wow.animate__fadeInUpBig.animated( data-wow-duration="1s")
+                      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deserunt quos enim quidem consequatur error. Necessitatibus quae sit error quam.
+                      br
+                      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quibusdam dolorem, facilis nobis aut, voluptatibus ipsam saepe ipsum ratione totam obcaecati in ex soluta sint odio? Eaque totam, optio cum dolores alias corrupti, asperiores ut doloribus magnam, voluptates sunt veniam.
+                    a.read-more.wow.animate__fadeInUpBig.animated(href="" data-wow-duration="1s") Read More 
+                    img.float-right(src="../images/GloryLogo.png", alt="" width="70")
+                    img.float-right.mx-3(src="../images/Joo Logo.png", alt="" width="150")
+
+    //End About
+    // Start Products
+    section.Products
+      h3.text-center Our Products
+      p.text-center Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, aspernatur.
+      .container
+        .row.justify-content-center
+          .col-lg-10
+            .Products-item
+              .row
+                .col-lg-6
+                  .item.wow.animate__fadeInLeft.animated( data-wow-duration="1s")
+                    img.w-100(src="../images/Products/Hair.png", alt="")
+                    .overflow
+                      a(href="")
+                        h5 Hair
+                  .item.wow.animate__fadeInUpBig.animated( data-wow-duration="1s")
+                    img.w-100(src="../images/Products/Salt2.png", alt="")
+                    .overflow
+                      a(href="")
+                        h5 Salt
+                .col-lg-6
+                  .row    
+                    .col-lg-6
+                      .item.wow.animate__fadeInRight.animated( data-wow-duration="1s")
+                        img.w-100(src="../images/Products/Clay2.png", alt="")
+                        .overflow
+                          a(href="")
+                            h5 Clay
+                    .col-lg-6
+                      .item.wow.animate__fadeInRight.animated( data-wow-duration="2s")
+                        img.w-100(src="../images/Products/Body2.png", alt="")
+                        .overflow
+                          a(href="")
+                            h5 Body
+                  .item.wow.animate__fadeInUpBig.animated( data-wow-duration="1s")
+                    img.w-100(src="../images/Products/Face.png", alt="")
+                    .overflow
+                      a(href="")
+                        h5 Face
+    // End Products
+    //Start Trending Products
+    section.Trending-Products
+      h3.text-center Trending Products
+      p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, similique.
+      .container
+        .owl-carousel
+          .item.owl-theme.wow.animate__fadeInRight.animated( data-wow-duration="1s")
+            .card-ship
+              .image
+                img(src='images/Trending/6.png', alt='')
+              .card-ship-body
+                .prand.text-center Glory
+                a.name-prodect.text-center(href="") Jasmine Flower Perfume
+                .prise.text-center
+                  .old
+                    del $ 69.99
+                  .new $ 50.00
+                a.read-more.add-Card(href="#") Add to Card
+                  span.pe-7s-cart
+          .item.owl-theme.wow.animate__fadeInRight.animated( data-wow-duration="1s")
+            .card-ship
+              .image
+                img(src='images/Trending/1.png', alt='')
+              .card-ship-body
+                .prand.text-center Glory
+                a.name-prodect.text-center(href="#") Jasmine Flower Perfume
+                .prise.text-center
+                  .old
+                    del $ 69.99
+                  .new $ 50.00
+                a.read-more.add-Card(href="#") Add to Card
+                  span.pe-7s-cart
+          .item.owl-theme.wow.animate__fadeInRight.animated( data-wow-duration="1s")
+            .card-ship
+              .image
+                img(src='images/Trending/7.png', alt='')
+              .card-ship-body
+                .prand.text-center Glory
+                a.name-prodect.text-center(href="#") Jasmine Flower Perfume
+                .prise.text-center
+                  .old
+                    del $ 69.99
+                  .new $ 50.00
+                a.read-more.add-Card(href="#") Add to Card
+                  span.pe-7s-cart
+          .item.owl-theme.wow.animate__fadeInRight.animated( data-wow-duration="1s")
+            .card-ship
+              .image
+                img(src='images/Trending/2.png', alt='')
+              .card-ship-body
+                .prand.text-center Joon
+                a.name-prodect.text-center(href="") Jasmine Flower Perfume
+                .prise.text-center
+                  .old
+                    del $ 69.99
+                  .new $ 50.00
+                a.read-more.add-Card(href="#") Add to Card
+                  span.pe-7s-cart
+          .item.owl-theme.wow.animate__fadeInRight.animated( data-wow-duration="1s")
+            .card-ship
+              .image
+                img(src='images/Trending/8.png', alt='')
+              .card-ship-body
+                .prand.text-center Glory
+                a.name-prodect.text-center(href="") Jasmine Flower Perfume
+                .prise.text-center
+                  .old
+                    del $ 69.99
+                  .new $ 50.00
+                a.read-more.add-Card(href="#") Add to Card
+                  span.pe-7s-cart
+          .item.owl-theme.wow.animate__fadeInRight.animated( data-wow-duration="1s")
+            .card-ship
+              .image
+                img(src='images/Trending/3.png', alt='')
+              .card-ship-body
+                .prand.text-center Joon
+                a.name-prodect.text-center(href="#") Jasmine Flower Perfume
+                .prise.text-center
+                  .old
+                    del $ 69.99
+                  .new $ 50.00
+                a.read-more.add-Card(href="#") Add to Card
+                  span.pe-7s-cart
+          .item.owl-theme.wow.animate__fadeInRight.animated( data-wow-duration="1s")
+            .card-ship
+              .image
+                img(src='images/Trending/9.png', alt='')
+              .card-ship-body
+                .prand.text-center Glory
+                a.name-prodect.text-center(href="#") Jasmine Flower Perfume
+                .prise.text-center
+                  .old
+                    del $ 69.99
+                  .new $ 50.00
+                a.read-more.add-Card(href="#") Add to Card
+                  span.pe-7s-cart
+          .item.owl-theme.wow.animate__fadeInRight.animated( data-wow-duration="1s")
+            .card-ship
+              .image
+                img(src='images/Trending/4.png', alt='')
+              .card-ship-body
+                .prand.text-center Glory
+                a.name-prodect.text-center(href="") Jasmine Flower Perfume
+                .prise.text-center
+                  .old
+                    del $ 69.99
+                  .new $ 50.00
+                a.read-more.add-Card(href="#") Add to Card
+                  span.pe-7s-cart
+          .item.owl-theme.wow.animate__fadeInRight.animated( data-wow-duration="1s")
+            .card-ship
+              .image
+                img(src='images/Trending/10.png', alt='')
+              .card-ship-body
+                .prand.text-center Glory
+                a.name-prodect.text-center(href="#") Jasmine Flower Perfume
+                .prise.text-center
+                  .old
+                    del $ 69.99
+                  .new $ 50.00
+                a.read-more.add-Card(href="#") Add to Card
+                  span.pe-7s-cart
+          .item.owl-theme.wow.animate__fadeInRight.animated( data-wow-duration="1s")
+            .card-ship
+              .image
+                img(src='images/Trending/5.png', alt='')
+              .card-ship-body
+                .prand.text-center Glory
+                a.name-prodect.text-center(href="") Jasmine Flower Perfume
+                .prise.text-center
+                  .old
+                    del $ 69.99
+                  .new $ 50.00
+                a.read-more.add-Card(href="#") Add to Card
+                  span.pe-7s-cart
+
+
+
+    //End Trending Products
+    //Start Blog 
+    section.Blog 
+      h3.text-center Latest Blog Posts
+      p.text-center Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, sapiente.
+      .container
+        .row.row-cols-1.row-cols-md-2
+          .col.mb-4
+            .card.wow.animate__fadeInUpBig.animated( data-wow-duration="1s")
+              .image
+                img.card-img-top(src='../images/designZ.png', alt='...')
+                .date
+                  p 8
+                  span Des
+              .card-body
+                h5.card-title The History and the Hype
+                p.card-text
+                  | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                a.read-more(href="") Read More 
+          .col.mb-4
+            .card.wow.animate__fadeInUpBig.animated( data-wow-duration="2s")
+              .image
+                img.card-img-top(src='../images/002.png', alt='...')
+                .date
+                  p 31
+                  span Oct
+              .card-body
+                h5.card-title best facial cream ever
+                p.card-text
+                  | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                a.read-more(href="") Read More 
+          .col.mb-4
+            .card.wow.animate__fadeInUpBig.animated( data-wow-duration="3s")
+              .image
+                img.card-img-top(src='../images/3373652.png', alt='...')
+                .date
+                  p 2
+                  span Jun
+              .card-body
+                h5.card-title best mackup secret
+                p.card-text
+                  | This is a longer card with supporting text below as a natural lead-in to additional content.
+                a.read-more(href="") Read More 
+          .col.mb-4
+            .card.wow.animate__fadeInUpBig.animated( data-wow-duration="4s")
+              .image
+                img.card-img-top(src='../images/zxc.png', alt='...')
+                .date
+                  p 20
+                  span Feb
+              .card-body
+                h5.card-title women secret beauty tips
+                p.card-text
+                  | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                a.read-more(href="") Read More 
+    //End Blog 
+
+
+    include include/Footer.pug
+    include include/model.pug
+    include include/script.pug

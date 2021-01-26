@@ -1,0 +1,86 @@
+- var pageTitl = "contact";
+//DOCTYPE html
+html(lang="en")
+  head
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    // Start Contact-us
+    section.contact-us-page
+      .container
+        .row.justify-content-center
+          .col-lg-9
+            .contact-content
+              .contact-info
+                .contact
+                  h4 Contact Us
+                  p
+                    i.fas.fa-laptop-house.fa-fw  
+                    |  Al-Salt / Jordan
+                  p
+                    i.fas.fa-industry.fa-fw  
+                    |  Al-Salt / Jordan
+                  p
+                    i.fas.fa-map-marker-alt.fa-fw
+                    |  789 Wadi Shajara, As-Salt, Jordan 19110
+                  //-p
+                    i.far.fa-clock.fa-fw
+                    | Sunday - Thursday 09:00AM - 09:00PM
+                  a(href="tel:00962777418060" title="0096 2777 418 060" class="link-go")
+                    i.fas.fa-phone-square-alt.fa-fw
+                    | 00962777418060
+                  
+                  a(href="tel:00962779573598" title="0096 2779 573 598" class="link-go")
+                    i.fas.fa-mobile-alt.fa-fw  
+                    | 00962779573598
+                  a(href="tel:0096253500144" title="0096 2535 001 44" class="link-go")
+                    i.fas.fa-fax.fa-fw  
+                    | 0096253500144
+                  a(href="mailto:info@deadseaglory.net" title="info@deadseaglory.net" class="link-go")
+                    i.far.fa-envelope.fa-fw
+                    | info@deadseaglory.net
+                .contact-map
+                  .mapouter
+                    .gmap_canvas
+                      iframe#gmap_canvas(width='412', height='135', src="https://maps.google.com/maps?q=32%C2%B002'03.6%22N%2035%C2%B044'10.4%22E&t=&z=17&ie=UTF8&iwloc=&output=embed", frameborder='0', scrolling='no', marginheight='0', marginwidth='0')
+
+              .contact-form.text-center
+                //-.ripple-background
+                  .circle.xxlarge.shade1
+                  .circle.xlarge.shade2
+                  .circle.large.shade3
+                  .circle.mediun.shade4
+                  .circle.small.shade5
+                form(action='')
+                  h3
+                    | Contact Form
+                    i.fas.fa-paper-plane  
+                  .form-groub
+                    input#Email.input-control(type='text')
+                    label(for='Email') Email
+                    span.icon
+                      i.far.fa-envelope.fa-fw
+                  .form-groub
+                    input#Phone.input-control(type='text')
+                    label(for='Phone') Phone
+                    span.icon
+                      i.fas.fa-mobile-alt.fa-fw
+                  .form-groub
+                    input#Subject.input-control(type='text')
+                    label(for='Subject') Subject
+                    span.icon
+                      i.fas.fa-book-open.fa-fw
+                  .form-groub
+                    textarea#Subject.input-control
+                    span.icon
+                      i.far.fa-comment-alt.fa-fw
+                  .form-groub
+                    a.read-more(href="#") Send
+    // End Contact-us
+
+    //Start Footer
+    //-include include/Footer.pug
+    include include/model.pug
+    include include/script.pug

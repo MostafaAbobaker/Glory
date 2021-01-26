@@ -1,0 +1,73 @@
+/* Start Gifts Page */
+.gifts-page {
+  padding: 80px 0;
+  background-color: #F0F0F0;
+  position: relative;
+  /* padding-top: 400px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/Valentine-Facebook-Cover-Banner-06.png) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+
+  } */
+  
+  .image   {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -7%;
+      left: -7%;
+      background-color:#ecad42;
+      width: 80%;
+      height: 100%;
+      z-index: 1;
+      border-radius: 10px;
+    }
+    &::after {
+      content: "\f06b";
+      position: absolute;
+      top: -15%;
+      right: -21px;
+      color: #ec0d2f;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 72px;
+      transform: rotate(30deg);
+      z-index: 3;
+      text-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    }
+    a {
+      display: block;
+      overflow: hidden;
+      border: 5px solid #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      background-color: #3098d4;
+      transition: all 0.5s ease-in-out;
+    }
+    img {
+      position: relative;
+      z-index: 2;
+      transition: all 0.5s ease-in-out;
+    }
+    &:hover img {
+      transform: scale(1.05) rotate(5deg);
+    }
+    &:hover span {
+      box-shadow: 5px 5px 20px rgba(#000 ,0.5);
+    }
+  }
+}
+/* End Gifts Page */

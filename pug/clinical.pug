@@ -1,0 +1,113 @@
+- var pageTitl = "clinical";
+//DOCTYPE html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="css/twentytwenty.css")
+    include include/head.pug
+  body
+    // start Header
+    include include/header.pug
+    //end Header
+    //Start  breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='Index.html') Home
+          li.breadcrumb-item.active(aria-current='page') Clinical Research
+    //End breadcrumb
+    // Start gifts
+    section.clinical-page
+      .container
+        .row.justify-content-center
+          .col-lg-12
+            .clinical-box
+              .container-fluid
+                .row
+                  .col-lg-6
+                    .clinical-box-info
+                      p.load
+                        em Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facere delectus ipsam esse nobis quidem dolore asperiores, harum rem iste!
+                      h4.text-center Rose Carroll
+                      #shangPhoto.photo-groub
+                        .photo.one
+                          img(src="../images/Trending/1.png", alt="")
+                          h5 Joon Mud Shampoo
+                        .photo.Two.active 
+                          img(src="../images/Trending/4.png", alt="")
+                          h5 Glory Whitening Cream
+                        .photo.Three
+                          img(src="../images/Trending/7.png", alt="")
+                          h5 Glory Whitening Cream
+                  .col-lg-6
+                    .image
+                      #container1
+                        img.img-before(src="images/before-1.png", alt="")
+                        img.img-after(src="images/after-1.png", alt="")
+          .col-lg-12
+            .Research-box
+              .row
+                .col-lg-4
+                  .image
+                    img.w-100(src="images/6997.jpg", alt="")             
+                .col-lg-8
+                  .Research-box-info
+                    p.load
+                      em We are one of the first organizations which did medical research in the use of the Dead Sea in medicine and cosmetics.
+                    p.mt-5 A medical research to find the Dead Sea benefits in medicine as the most potent natural skin treatment for multiple skin diseases besides its great value in cosmetics in tightening, purifying and soothing the skin.
+                    p The research was first started in the united states where doctor Jamal Dabbas who were mainly involved in the study besides his colleagues, Dr. Omar Omran & his group who were studying dermatology & internal medicine in Jhon Hopkins university in USA, continued the research. The clinical studies were continued in Jordan and the whole original work was completed (though still investigations are ongoing) at the 3 biggest medical centers in Jordan (Jordan university Hospital, King Hussein hospital at Royal medical services institution & Ministry of health.
+                    p The idea of using the Dead Sea in the treatment of skin diseases and cosmetics is not a new concept.
+          .col-lg-12
+            .Research-box
+              .row
+                    
+                .col-lg-8
+                  .Research-box-info
+                    p.load
+                      em It is actually well known in history that historical figures and beauty seekers like Cleopatra and King Herod recognized the natural secret of using the Dead Sea as the most potent natural skin remedy for the skin.
+                    p.mt-5 And through modern medical researches, this fact was greatly emphasized to the point that some European countries like Denmark besides others have sent patients with skin chronic troubles to the Dead Sea fully paid for 3weeks to take full advantage of this natural skin remedy since 1970 and still going on.
+                .col-lg-4
+                  .image
+                    img.w-100(src="images/microbiologists-working-modern-lab.jpg", alt="")         
+          .col-lg-12
+            .Research-box
+              .row
+                .col-lg-4
+                  .image
+                    img.w-100(src="images/summary.jpg", alt="")             
+                .col-lg-8
+                  .Research-box-info
+                    p.load.lead.font-weight-bold
+                      em The clinical studies are briefly summarized as follows:
+                    ol.mt-5   
+                      li Dead Sea therapy in rheumatoid arthrithis in Jordan: 342 patients with classical rheumatoid arthritis were randomly divided into 2 groups of 171 patients for each group. A statistically significant improvement was observed in the group who used the Dead Sea mud.              
+                      li Clinical efficacy od the Dead Sea salts in hypertension (64 patients were involved in the study).
+                      li Effect od the Dead Sea salts on foot blister incidence during hiking (120 participants).
+                      li Dead Sea mud in the treatment of acne vulgaris (81 patients).
+                      li Dead Sea mud in the treatment of psoriasis (114 patients were involved).
+                      li Dead Sea mud cosmetics: 4 month double blind and controlled study about the use of mud in the treatment of aged skin (32 -patients).
+                      li Dead Sea mud therapy of eczema (220 patients).
+                      li Dead Sea mud effect on the skin mechanical properties (16 patents).
+                      li Natural secrets of the Dead Sea in cosmetics and medical therapeutics (Review article).
+                      li The results were so promising that the doctors who conducted the study established a factory of Dead Sea cosmetics Glory Dead Sea products.
+                      li All rights are reserved for the authors.
+
+
+
+
+
+    // End gifts
+
+    //Start Footer
+    include include/Footer.pug
+    include include/model.pug
+    
+    include include/script.pug
+    script(src="js/jquery.event.move.js")
+    script(src="js/jquery.twentytwenty.js")
+    script.
+      $(function(){
+      $("#container1").twentytwenty();
+      });
+
+    
