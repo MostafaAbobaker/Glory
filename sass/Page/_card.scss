@@ -1,0 +1,237 @@
+/* Start card page */
+.card-page {
+  padding: 80px 0;
+  background-color: #f0f0f0;
+  .card-detal {
+    .tables {
+      padding-bottom: 15px;
+      border-bottom: 2px solid #333;
+      margin-bottom: 20px;
+    }
+    .card-product {
+      position: relative;
+      z-index: 2;
+      border: 1px solid #ccc;
+      display: flex;
+      margin: 0 -15px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      transition: all 0.4s ease-in-out;
+      .image {
+        height: 120px;
+        width: 20%;
+        img {
+          height: 100%;
+        }
+      }
+      .info-card-ship {
+        padding: 34px 0 ;
+        width: 40%;
+        .prand  {
+          font-weight: 300;
+          font-size: 1.2em;
+        }
+        .name-prodect {
+          text-decoration: none;
+          color: #212121;
+          display: block;
+          cursor: pointer;
+          transition: all 0.4s ease-in-out;
+          &:hover {
+            color: #3098d4;
+          }
+        }
+      }
+      .prise {
+        padding: 20px 0 ;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin: 10px auto;
+        justify-content: space-around;
+        .old {
+          color: #999;
+          font-size: 90%;
+          
+        }
+        .new {
+          font-weight: 600;
+          font-size: 120%;
+          color: #e83e8c;
+        }
+      }
+      .count {
+        display: flex;
+        padding: 37px 0 ;
+        width: 30%;
+        button {
+          display: block;
+          border: 1px solid #999;
+          border-radius: 0;
+          height: 45px;
+          box-shadow: 0 0 20px rgba(#000, 0.2);
+          &:focus {
+            border: none;
+            outline: 0;
+            border: 1px solid #999;
+            box-shadow: none;
+            background-color: #F9B645;
+            color: #fff;
+          }
+          &.minus {
+            border-right: none;
+            border-radius: 25px 0 0 25px;
+          }
+          &.plus {
+            border-left: none;
+            border-radius: 0 25px  25px 0;
+          }
+          &:hover {
+            background-color: #F9B645;
+            color: #fff;
+          } 
+        }
+        input {
+          display: block;
+          border: 1px solid #999;
+          padding: 10px;
+          height: 45px;
+          text-align: center;
+          &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+          &:focus {
+            border: none;
+            outline: 0;
+            border: 1px solid #999;
+          }
+        }
+      }
+      .total-price-product {
+        padding: 40px 0;
+        text-align: center;
+        width: 20%;
+      }
+      .option {
+        position: absolute;
+        top: 121px;
+        left: -1px;
+        width: calc(100% + 3px);
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        border-top: none;
+        opacity: 0;
+        transform: scaleY(0) ;
+        transform-origin: 0 0 0;
+        transition: all 0.4s ease-in-out;
+        z-index: -1;
+        visibility: hidden;
+        .form-check {
+          margin-bottom: 0;
+          padding: 10px;
+          padding-left: 35px;
+          cursor: pointer;
+          label {
+            margin-bottom: 0;
+            position: relative;
+            cursor: pointer;
+            &::before {
+              content: '\f004';
+              font-family: "Font Awesome 5 Free";
+              font-weight: 400;
+              position: absolute;
+              left: -21px;
+              z-index: 1;
+              color: #999;
+              transition: all 0.4s ease-in-out;
+            }
+          }
+          .form-check-input {
+            position: absolute;
+            z-index: 2;
+            opacity: 0;
+            cursor: pointer;
+            &:checked {
+              &~label {
+                &::before {
+                  font-weight: 900;
+                  color: #f00;
+                }
+              }
+            }
+          }
+        }
+        .delet {
+          a {
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            background-color: #f44336;
+            color: #fff;
+          }
+        }
+      }
+      &:hover {
+        margin-bottom: 60px;
+        .option {
+          opacity: 1;
+          //transform: translateY(0);
+          transform: scaleY(1) ;
+          z-index: 1;
+          visibility: visible;
+        }
+      }
+    }
+    
+  }
+  .total {
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    background: #fefefe;
+    h4 {
+        //background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background-color: #F9B645; 
+        color: #fff;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .total-body {
+        padding: 10px;
+        ul {
+            margin: 0;
+            li {
+                display: flex;
+                justify-content: space-between;
+                padding: 5px 0;
+                span {
+                    .Qty {
+                        color: #999;
+                    }
+                }
+                .price {
+                    span {
+                        font-size: .8em;
+                    }
+                }
+                &:last-child {
+                    padding: .5rem 0 0;
+                    border-top: 1px solid #e7e7e7;
+                    font-size: 22px;
+                    font-weight: bold;
+                    color: #333;
+                    .price {
+                        font-size: 22px;
+                        span {
+                            font-size: .8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+}
+/* End card page */

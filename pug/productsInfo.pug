@@ -1,0 +1,221 @@
+- var pageTitl = "products";
+//DOCTYPE html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="css/slick.css")
+    link(rel="stylesheet", href="css/slick-theme.css")
+    include include/head.pug
+  body
+    // Start Loader
+    include include/loading.pug
+    // End Loader
+    // start Header
+    include include/header.pug
+    //end Header
+    //Start  breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='Index.html') Home
+          li.breadcrumb-item
+            a(href='products.html') Products
+          li.breadcrumb-item.active(aria-current='page') Products Info
+    //End breadcrumb
+    // Start Blog
+    section.ProductsInfo-page
+      .container
+        .row
+          .col-lg-4
+            .ProductsInfo-image
+              #slider-for.image.slider-for.slider
+                  .photo
+                    img(src="images/glory/Filter/40.png", alt="")  
+                  .photo
+                    img(src="images/glory/Filter/42.png", alt="")  
+                  .photo
+                    img(src="images/glory/Filter/35.png", alt="")  
+                  .photo
+                    img(src="images/glory/Filter/45.png", alt="")  
+              #slider-nav.image-group.slider.slider-nav
+                .photo
+                  img(src="images/glory/Filter/40.png", alt="")  
+                .photo
+                  img(src="images/glory/Filter/42.png", alt="")  
+                .photo
+                  img(src="images/glory/Filter/35.png", alt="")  
+                .photo
+                  img(src="images/glory/Filter/45.png", alt="")  
+          .col-lg-1
+          .col-lg-7
+            .ProductsInfo-info
+              h3  Anti-Wrinkle Cream
+              h4 
+                small.pl-5 Glory
+              .prise
+                .old
+                  del $ 69.99
+                .new $ 50.00
+              .Rating-star
+                i.fa.fa-star.fa-2x
+                i.fa.fa-star.fa-2x
+                i.fa.fa-star.fa-2x
+                i.fa.fa-star.fa-2x
+                i.fa.fa-star.fa-2x
+              p.ProductsInfo-prodect Anti-Wrinkle Cream helps to restore new life into aging skin. For skin beginning to show signs of aging. A highly concentrated cream with a soft, light texture. Its unique formula was created to help slow down the signs of aging. Enhancements of collagen which is the main constituent of connective tissue that helps to improve elasticity and moisture content of the skin. It gives back to the skin while showing a great deal of vitality.
+              .filter
+                .size
+                  .input-group
+                    .input-group-prepend
+                      label.input-group-text(for='inputGroupSelect01') Size: 
+                    select#inputGroupSelect01.custom-select
+                      option(selected='3') Small
+                      option(value='1') Medium
+                      option(value='2') Large
+                #color.color
+                  .text Color : 
+                  span.one
+                  span.two
+                  span.three.active
+                  span.four
+                  span.five
+                  span.six
+              .chose-prodect
+                #count.count
+                  button.btn.minus
+                    i.fas.fa-minus
+                  input(type="number" value='1' min="1" max='100')
+                  button.btn.plus
+                    i.fas.fa-plus
+                .button-add-card
+                  a.read-more.add-Card(href="productsInfo.html") Add to Card
+                    span.pe-7s-cart
+      .description
+        .container
+          .row
+            .col-lg-12
+              ul#myTab.nav.nav-tabs(role='tablist')
+                li.nav-item(role='presentation')
+                  a#home-tab.nav-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true')  Description
+                li.nav-item(role='presentation')
+                  a#profile-tab.nav-link(data-toggle='tab', href='#profile', role='tab', aria-controls='profile', aria-selected='false') Reviews
+              #myTabContent.tab-content
+                #home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab') 
+                  .container-fluid
+                    .row
+                      .col-lg-6    
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem officiis tempora, ex hic earum reprehenderit laboriosam laudantium quasi. Nemo, animi?
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia maxime sed nesciunt dolorum deserunt?
+                  
+                        ul.list-unstyled
+                          li.lsit-item Lorem ipsum dolor
+                          li.lsit-item Lorem ipsum dolor
+                          li.lsit-item Lorem ipsum dolor
+                          li.lsit-item Lorem ipsum dolor
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, saepe dolores alias natus perferendis tenetur temporibus ipsam, earum dicta facilis, at esse minima obcaecati? Earum pariatur dolores perferendis laborum unde!
+                      .col-lg-6
+                        .image
+                          img.w-100.img-thumbnail(src="images/Face.png", alt="")
+                #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+                  .container-fluid
+                    .row
+                      .col-lg-8
+                        .media
+                          img.mr-3.img-thumbnail(src='../images/team/avatar_user_36692_1511968805.jpg', alt='...')
+                          .media-body
+                            h5.mt-0 Media heading
+                              .Rating-star
+                                i.fa.fa-star.text-warning
+                                i.fa.fa-star.text-warning
+                                i.fa.fa-star.text-warning
+                                i.fa.fa-star.text-warning
+                                i.fa.fa-star
+                            p     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            .media.mt-3
+                              a.mr-3(href='#')
+                                img.mr-3.img-thumbnail(src='../images/team/images.jpg', alt='...')
+                              .media-body
+                                h5.mt-0 Media heading
+                                  .Rating-star
+                                    i.fa.fa-star.text-warning
+                                    i.fa.fa-star.text-warning
+                                    i.fa.fa-star.text-warning
+                                    i.fa.fa-star
+                                    i.fa.fa-star
+                                p         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        ul.list-unstyled
+                          li.media
+                            img.mr-3.img-thumbnail(src='../images/team/istockphoto-1187980751-612x612.jpg', alt='...')
+                            .media-body
+                              h5.mt-0.mb-1 List-based media object
+                                .Rating-star
+                                  i.fa.fa-star.text-warning
+                                  i.fa.fa-star.text-warning
+                                  i.fa.fa-star.text-warning
+                                  i.fa.fa-star.text-warning
+                                  i.fa.fa-star.text-warning
+                              p       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                          li.media.my-4
+                            img.mr-3.img-thumbnail(src='../images/team/team-23.jpg', alt='...')
+                            .media-body
+                              h5.mt-0.mb-1 List-based media object
+                                .Rating-star
+                                  i.fa.fa-star.text-warning
+                                  i.fa.fa-star.text-warning
+                                  i.fa.fa-star
+                                  i.fa.fa-star
+                                  i.fa.fa-star
+                              p       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                          li.media
+                            img.mr-3.img-thumbnail(src='../images/team/images.jpg', alt='...')
+                            .media-body
+                              h5.mt-0.mb-1 List-based media object
+                                .Rating-star
+                                  i.fa.fa-star.text-warning
+                                  i.fa.fa-star.text-warning
+                                  i.fa.fa-star.text-warning
+                                  i.fa.fa-star.text-warning
+                                  i.fa.fa-star
+                              p       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+                      .col-lg-4
+                        .rating-box
+                          h4.text-center Leave A Review
+                          #full-stars-example-two
+                            .rating-group
+                              input#rating3-none.rating__input.rating__input--none(disabled='', checked='', name='rating3', value='0', type='radio')
+                              label.rating__label(aria-label='1 star', for='rating3-1')
+                                i.rating__icon.rating__icon--star.fa.fa-star.fa-2x
+                              input#rating3-1.rating__input(name='rating3', value='1', type='radio')
+                              label.rating__label(aria-label='2 stars', for='rating3-2')
+                                i.rating__icon.rating__icon--star.fa.fa-star.fa-2x
+                              input#rating3-2.rating__input(name='rating3', value='2', type='radio')
+                              label.rating__label(aria-label='3 stars', for='rating3-3')
+                                i.rating__icon.rating__icon--star.fa.fa-star.fa-2x
+                              input#rating3-3.rating__input(name='rating3', value='3', type='radio')
+                              label.rating__label(aria-label='4 stars', for='rating3-4')
+                                i.rating__icon.rating__icon--star.fa.fa-star.fa-2x
+                              input#rating3-4.rating__input(name='rating3', value='4', type='radio')
+                              label.rating__label(aria-label='5 stars', for='rating3-5')
+                                i.rating__icon.rating__icon--star.fa.fa-star.fa-2x
+                              input#rating3-5.rating__input(name='rating3', value='5', type='radio')
+                          form
+                            .form-group
+                              input#exampleFormControlInput1.form-control(type='text', placeholder='Enter your name')
+                            
+                            .form-group
+                              input#exampleFormControlInput1.form-control(type='email', placeholder='Enter your email')
+                            
+                            .form-group
+                              textarea#exampleFormControlTextarea1.form-control(rows='3' placeholder='Enter your review')
+                            .form-groub
+                              a.read-more(href="#") Send
+
+
+    // End Blog
+
+    //Start Footer
+    include include/Footer.pug
+    include include/model.pug
+    include include/script.pug
+    

@@ -32,6 +32,13 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
+    <!-- Start Loader-->
+    <div class="box-loder"> 
+      <div class="box-logo filter">
+        <div class="content"><img src="images/GloryLogo.png" alt=""/></div>
+      </div>
+    </div>
+    <!-- End Loader-->
     <!-- start Header-->
     <!--Start Top Header-->
     <header class="top-header">
@@ -217,11 +224,12 @@
               <li class="Setting drob"><a href="#"> 
                   <!--i.fas.fa-cog.fa.fw--><span class="pe-7s-config"></span>Setting</a>
                 <ul class="list-unstyled drob-down">
-                  <li><a href="#">my account</a></li>
-                  <li><a href="#">my favorite                                 </a></li>
+                  <li><a href="accountProcenal.html">my account</a></li>
+                  <li><a href="accountProcenal.html">my favorite                                 </a></li>
                   <li><a href="#"> <i class="fas fa-sign-out-alt fa-fw"></i> sign out                          </a></li>
                 </ul>
               </li>
+              <li class="login"><a href="Login.html"> <i class="fas fa-sign-in-alt fa-fw"> </i> Sign In</a></li>
             </ul>
           </div>
         </div>
@@ -241,7 +249,49 @@
             <li class=" nav-item "><a class="nav-link" href="gifts.html">gifts</a></li>
             <li class=" nav-item "><a class="nav-link" href="Blog.html">Blog</a></li>
             <li class=" nav-item "><a class="nav-link" href="contactUs.html">contact us</a></li>
-            <li class="nav-item basket"><a class="nav-link shopping-cart" href="#"> <span class="pe-7s-cart"><span class="badge badge-success">3</span></span></a></li>
+            <li class="nav-item basket drob"><a class="nav-link shopping-cart" href="#"> <span class="pe-7s-cart"><span class="badge badge-success">3</span></span></a>
+              <ul class="list-unstyled drob-down">
+                <li><a href="#"> 
+                    <div class="card-ship list">
+                      <div class="image"><img src="images/glory/Filter/9.png" alt=""/></div>
+                      <div class="card-ship-body">
+                        <div class="info-card-ship"><span class="name-prodect text-center" href="">Jasmine Flower Perfume</span></div>
+                        <div class="prise text-center">
+                          <div class="old">
+                            <del>$ 69.99</del>
+                          </div>
+                          <div class="new">$ 50.00</div>
+                        </div>
+                      </div>
+                    </div></a></li>
+                <li><a href="#"> 
+                    <div class="card-ship list">
+                      <div class="image"><img src="images/glory/Filter/18.png" alt=""/></div>
+                      <div class="card-ship-body">
+                        <div class="info-card-ship"><span class="name-prodect text-center" href="">Jasmine Flower Perfume</span></div>
+                        <div class="prise text-center">
+                          <div class="old">
+                            <del>$ 69.99</del>
+                          </div>
+                          <div class="new">$ 50.00</div>
+                        </div>
+                      </div>
+                    </div></a></li>
+                <li><a href="#"> 
+                    <div class="card-ship list">
+                      <div class="image"><img src="images/glory/Filter/27.png" alt=""/></div>
+                      <div class="card-ship-body">
+                        <div class="info-card-ship"><span class="name-prodect text-center" href="">Jasmine Flower Perfume</span></div>
+                        <div class="prise text-center">
+                          <div class="old">
+                            <del>$ 69.99</del>
+                          </div>
+                          <div class="new">$ 50.00</div>
+                        </div>
+                      </div>
+                    </div></a></li><a class="read-more add-Card" href="card.html">Checkout<span class="pe-7s-cart">       </span></a>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -371,10 +421,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/1.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/1.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck1"/>
+                          <label for="exampleCheck1"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -387,10 +442,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/2.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/2.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck2"/>
+                          <label for="exampleCheck2"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -403,10 +463,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/3.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/3.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck3"/>
+                          <label for="exampleCheck3"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -419,10 +484,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/4.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/4.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck4"/>
+                          <label for="exampleCheck4"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -435,10 +505,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/5.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/5.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck5"/>
+                          <label for="exampleCheck5"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -451,10 +526,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/6.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/6.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck6"/>
+                          <label for="exampleCheck6"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -467,10 +547,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/7.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/7.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck7"/>
+                          <label for="exampleCheck7"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -483,10 +568,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/8.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/8.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck8"/>
+                          <label for="exampleCheck8"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -499,10 +589,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/9.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/9.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck9"/>
+                          <label for="exampleCheck9"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -515,10 +610,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/10.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/10.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck10"/>
+                          <label for="exampleCheck10"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -531,10 +631,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/11.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/11.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck11"/>
+                          <label for="exampleCheck11"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -547,10 +652,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/12.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/12.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck12"/>
+                          <label for="exampleCheck12"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -563,10 +673,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/13.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/13.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck13"/>
+                          <label for="exampleCheck13"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -579,10 +694,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/14.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/14.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck14"/>
+                          <label for="exampleCheck14"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -595,10 +715,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/15.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/15.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck15"/>
+                          <label for="exampleCheck15"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -611,10 +736,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/16.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/16.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck16"/>
+                          <label for="exampleCheck16"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -627,10 +757,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/17.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/17.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck17"/>
+                          <label for="exampleCheck17"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -643,10 +778,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/18.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/18.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck18"/>
+                          <label for="exampleCheck18"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -659,10 +799,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/19.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/19.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck19"/>
+                          <label for="exampleCheck19"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -675,10 +820,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/20.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/20.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck20"/>
+                          <label for="exampleCheck20"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -691,10 +841,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/21.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/21.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck21"/>
+                          <label for="exampleCheck21"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -707,10 +862,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/22.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/22.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck22"/>
+                          <label for="exampleCheck22"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -723,10 +883,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/23.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/23.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck23"/>
+                          <label for="exampleCheck23"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -739,10 +904,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/24.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/24.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck24"/>
+                          <label for="exampleCheck24"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -755,10 +925,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/25.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/25.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck25"/>
+                          <label for="exampleCheck25"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -771,10 +946,15 @@
                   </div>
                   <div class="Joon col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/26.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/26.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck26"/>
+                          <label for="exampleCheck26"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Joon </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -787,10 +967,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/27.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/27.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck27"/>
+                          <label for="exampleCheck27"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -803,10 +988,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/28.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/28.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck28"/>
+                          <label for="exampleCheck28"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -819,10 +1009,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/29.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/29.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck29"/>
+                          <label for="exampleCheck29"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -835,10 +1030,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/30.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/30.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck30"/>
+                          <label for="exampleCheck30"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -851,10 +1051,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/31.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/31.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck31"/>
+                          <label for="exampleCheck31"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -867,10 +1072,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/32.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/32.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck32"/>
+                          <label for="exampleCheck32"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -883,10 +1093,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/33.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/33.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck33"/>
+                          <label for="exampleCheck33"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -899,10 +1114,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/34.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/34.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck34"/>
+                          <label for="exampleCheck34"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -915,10 +1135,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/35.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/35.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck35"/>
+                          <label for="exampleCheck35"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -931,10 +1156,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/36.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/36.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck36"/>
+                          <label for="exampleCheck36"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -947,10 +1177,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/37.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/37.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck37"/>
+                          <label for="exampleCheck37"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -963,10 +1198,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/38.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/38.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck38"/>
+                          <label for="exampleCheck38"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -979,10 +1219,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/39.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/39.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck39"/>
+                          <label for="exampleCheck39"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -995,10 +1240,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/40.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/40.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck40"/>
+                          <label for="exampleCheck40"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1011,10 +1261,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/41.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/41.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck41"/>
+                          <label for="exampleCheck41"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1027,10 +1282,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/42.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/42.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck42"/>
+                          <label for="exampleCheck42"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1043,10 +1303,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/43.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/43.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck43"/>
+                          <label for="exampleCheck43"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1059,10 +1324,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/44.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/44.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck44"/>
+                          <label for="exampleCheck44"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1075,10 +1345,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/45.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/45.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck45"/>
+                          <label for="exampleCheck45"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1091,10 +1366,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/46.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/46.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck46"/>
+                          <label for="exampleCheck46"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1107,10 +1387,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/47.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/47.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck47"/>
+                          <label for="exampleCheck47"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1123,10 +1408,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/48.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/48.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck48"/>
+                          <label for="exampleCheck48"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1139,10 +1429,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/49.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/49.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck49"/>
+                          <label for="exampleCheck49"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1155,10 +1450,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/50.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/50.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck50"/>
+                          <label for="exampleCheck50"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1171,10 +1471,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/51.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/51.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck51"/>
+                          <label for="exampleCheck51"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1187,10 +1492,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/52.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/52.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck52"/>
+                          <label for="exampleCheck52"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1203,10 +1513,15 @@
                   </div>
                   <div class="Glory col-lg-4">
                     <div class="card-ship">
-                      <div class="image"><img src="images/glory/Filter/53.png" alt=""/></div>
+                      <div class="image"><img src="images/glory/Filter/53.png" alt=""/>
+                        <div class="form-group form-check">
+                          <input class="form-check-input" type="checkbox" title="favorite" id="exampleCheck53"/>
+                          <label for="exampleCheck53"></label>
+                        </div>
+                      </div>
                       <div class="card-ship-body">
                         <div class="info-card-ship">
-                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="">Jasmine Flower Perfume</a>
+                          <div class="prand text-center">Glory </div><a class="name-prodect text-center" href="productsInfo.html">Jasmine Flower Perfume</a>
                         </div>
                         <div class="prise text-center">
                           <div class="old">
@@ -1305,6 +1620,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- owl carousel-->
     <script src="js/owl.carousel.min.js"></script>
+    <!-- owl carousel-->
+    <script src="js/slick.min.js"></script>
     <!-- Wow Scroll-->
     <script src="js/wow.min.js"></script>
     <!-- My Script JS & JQuery-->

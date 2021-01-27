@@ -1,0 +1,369 @@
+- var pageTitl = "";
+//DOCTYPE html
+html(lang="en")
+  head
+    include include/head.pug
+  body
+    // Start Loader
+    include include/loading.pug
+    // End Loader
+    // start Header
+    include include/header.pug
+    //end Header
+    //Start  breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='Index.html') Home
+          li.breadcrumb-item.active(aria-current='page') My Account 
+    //End breadcrumb
+    // Start gifts
+    section.accountProcenal-page.account-personal
+      .container
+              .row
+                // Start Aside List
+                .col-lg-3.mb-3
+                  .media
+                    img.mr-3(src='images/team/man.png' alt='...')
+                    .media-body
+                      h5.mt-0 Mostafa Abobakr
+                      p   mustafa.abobaker@gmail.com
+                  #list-tab.list-group(role='tablist')
+                    a#list-home-list.list-group-item.list-group-item-action.active(data-toggle='list' href='#list-home' role='tab' aria-controls='home') 
+                      i.fas.fa-book.fa-lg.fa-fw
+                      |  My Orders
+                    a#list-profile-list.list-group-item.list-group-item-action(data-toggle='list' href='#list-profile' role='tab' aria-controls='profile') 
+                      i.fas.fa-map-marked-alt.fa-lg.fa-fw
+                      |  Shipping Addresses
+                    a#list-messages-list.list-group-item.list-group-item-action(data-toggle='list' href='#list-messages' role='tab' aria-controls='messages') 
+                      i.fas.fa-heart.fa-lg.fa-fw
+                      |  Wish Lists
+                    a#list-settings-list.list-group-item.list-group-item-action(data-toggle='list' href='#list-settings' role='tab' aria-controls='settings') 
+                      i.fas.fa-award.fa-lg.fa-fw
+                      |  Recommended
+                    a#list-Account-list.list-group-item.list-group-item-action(data-toggle='list' href='#list-Account' role='tab' aria-controls='Account') 
+                      i.fas.fa-pencil-alt.fa-lg.fa-fw
+                      |  Account Settings
+                // End Aside List    
+                // Start Contint Info  
+                .col-lg-9
+                  #nav-tabContent.tab-content
+                    #list-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='list-home-list') 
+                      //Start My Orders
+                      .myOrder
+                        .info-order
+                          .row
+                            .col-lg-6
+                              p Order placed on:  
+                                strong  29 November 2019
+                              p Order ID:  
+                                strong  #4097222351189
+                              a(href="") Order details
+                            .col-lg-6
+                              p Recipient: Mostafa AboBaker
+                              p Payment method: Credit or Debit Cards
+                              p Total: 711.00  EGP
+                        .info-Item
+                          h5.p-3 SHIPMENT 1 OF 3
+                          .progress-box
+                            .progress
+                              .progress-bar.bg-warning(role='progressbar' style='width: 25%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100')
+                            .stap
+                              span 1
+                              p Ready for Shipping
+                            .stap  
+                              span 2
+                              p Out for delivery
+                            .stap  
+                              span 3
+                              p Returned
+                          .new-Item
+                            .body-new-Item
+                              .row
+                                .col-lg-3
+                                  .new-Item-image
+                                    img(src="images/glory/Filter/45.png", alt="")
+                                .col-lg-7
+                                  .new-Item-Detils
+                                    a(href="")
+                                      h4 Jasmine Flower Perfume
+                                      span Glory
+                                    .price
+                                      .new-price $599.99
+                                      .old-price
+                                        s $799.99
+                                    ul.saler
+                                      
+                                      li Size:
+                                        span.ml-5  Medium
+                                          
+                                      li Color:
+                                        #color.colorz.ml-5
+                                          
+                                          span.three.active
+                                          
+                                      li 
+                                        label Returned
+                                        #full-stars-example-two.ml-3
+                                          .rating-group
+                                            input#rating3-none.rating__input.rating__input--none(disabled='', checked='', name='rating3', value='0', type='radio')
+                                            label.rating__label(aria-label='1 star', for='rating3-1')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-1.rating__input(name='rating3', value='1', type='radio')
+                                            label.rating__label(aria-label='2 stars', for='rating3-2')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-2.rating__input(name='rating3', value='2', type='radio')
+                                            label.rating__label(aria-label='3 stars', for='rating3-3')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-3.rating__input(name='rating3', value='3', type='radio')
+                                            label.rating__label(aria-label='4 stars', for='rating3-4')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-4.rating__input(name='rating3', value='4', type='radio')
+                                            label.rating__label(aria-label='5 stars', for='rating3-5')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-5.rating__input(name='rating3', value='5', type='radio')
+                        .info-Item
+                          h5.p-3 SHIPMENT 2 OF 3
+                          .progress-box
+                            .progress
+                              .progress-bar.bg-warning(role='progressbar' style='width: 50%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100')
+                            .stap
+                              span 1
+                              p Ready for Shipping
+                            .stap  
+                              span 2
+                              p Out for delivery
+                            .stap  
+                              span 3
+                              p Returned
+                          .new-Item
+                            .body-new-Item
+                              .row
+                                .col-lg-3
+                                  .new-Item-image
+                                    img(src="images/glory/Filter/30.png", alt="")
+                                .col-lg-7
+                                  .new-Item-Detils
+                                    a(href="")
+                                      h4 Jasmine Flower Perfume
+                                      span Glory
+                                    .price
+                                      .new-price $599.99
+                                      .old-price
+                                        s $799.99
+                                    ul.saler
+                                      
+                                      li Size:
+                                        span.ml-5  Medium
+                                          
+                                      li Color:
+                                        #color.colorz.ml-5
+                                          
+                                          span.three.active
+                                          
+                                      li 
+                                        label Returned
+                                        #full-stars-example-two.ml-3
+                                          .rating-group
+                                            input#rating3-none.rating__input.rating__input--none(disabled='', checked='', name='rating3', value='0', type='radio')
+                                            label.rating__label(aria-label='1 star', for='rating3-1')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-1.rating__input(name='rating3', value='1', type='radio')
+                                            label.rating__label(aria-label='2 stars', for='rating3-2')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-2.rating__input(name='rating3', value='2', type='radio')
+                                            label.rating__label(aria-label='3 stars', for='rating3-3')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-3.rating__input(name='rating3', value='3', type='radio')
+                                            label.rating__label(aria-label='4 stars', for='rating3-4')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-4.rating__input(name='rating3', value='4', type='radio')
+                                            label.rating__label(aria-label='5 stars', for='rating3-5')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-5.rating__input(name='rating3', value='5', type='radio')
+
+                        .info-Item
+                          h5.p-3 SHIPMENT 3 OF 3
+                          .progress-box
+                            .progress
+                              .progress-bar.bg-warning(role='progressbar' style='width: 100%' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100')
+                            .stap
+                              span 1
+                              p Ready for Shipping
+                            .stap  
+                              span 2
+                              p Out for delivery
+                            .stap  
+                              span 3
+                              p Returned
+                          .new-Item
+                            .body-new-Item
+                              .row
+                                .col-lg-3
+                                  .new-Item-image
+                                    img(src="images/glory/Filter/10.png", alt="")
+                                .col-lg-7
+                                  .new-Item-Detils
+                                    a(href="")
+                                      h4 Jasmine Flower Perfume
+                                      span Joon
+                                    .price
+                                      .new-price $599.99
+                                      .old-price
+                                        s $799.99
+                                    ul.saler
+                                      
+                                      li Size:
+                                        span.ml-5  Medium
+                                          
+                                      li Color:
+                                        #color.colorz.ml-5
+                                          
+                                          span.three.active
+                                          
+                                      li 
+                                        label Returned
+                                        #full-stars-example-two.ml-3
+                                          .rating-group
+                                            input#rating3-none.rating__input.rating__input--none(disabled='', checked='', name='rating3', value='0', type='radio')
+                                            label.rating__label(aria-label='1 star', for='rating3-1')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-1.rating__input(name='rating3', value='1', type='radio')
+                                            label.rating__label(aria-label='2 stars', for='rating3-2')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-2.rating__input(name='rating3', value='2', type='radio')
+                                            label.rating__label(aria-label='3 stars', for='rating3-3')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-3.rating__input(name='rating3', value='3', type='radio')
+                                            label.rating__label(aria-label='4 stars', for='rating3-4')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-4.rating__input(name='rating3', value='4', type='radio')
+                                            label.rating__label(aria-label='5 stars', for='rating3-5')
+                                              i.rating__icon.rating__icon--star.fa.fa-star
+                                            input#rating3-5.rating__input(name='rating3', value='5', type='radio')
+                      
+                      
+                      //End My Orders
+                    #list-profile.tab-pane.fade(role='tabpanel' aria-labelledby='list-profile-list') 
+                      //Start Shipping Addresses
+                      .myOrder.p-3
+                        .info-user.p-3
+                          p.mb-0 
+                            strong Mostafa AboBaker 
+                            | (Primary)
+                          p.mb-0 El Nile
+                          p.mb-0 Cairo, Egypt
+                          p.mb-0 +2 011 4721 1106
+                          a(href="acount.html") Edit
+                      //End Shipping Addresses
+                    #list-messages.tab-pane.fade(role='tabpanel' aria-labelledby='list-messages-list')
+                      //Start Wish Lists
+                      .myOrder.p-3
+                        .new-Item
+                          .body-new-Item
+                            .row
+                              .col-lg-3
+                                .new-Item-image
+                                  img(src="images/glory/Filter/30.png", alt="")
+                              .col-lg-5
+                                .new-Item-Detils
+                                  a(href="")
+                                    h4 Jasmine Flower Perfume
+                                    span Glory
+                                  .price
+                                    .new-price $599.99
+                                    .old-price
+                                      span $799.99
+                              .col-4.text-center    
+                                a.read-more.add-Card(href="") Add to Card
+                                  span.pe-7s-cart 
+                                button.btn.btn-outline-danger.mt-2(type="button") 
+                                  i.fas.fa-trash-alt
+                                  |  Deleat   
+                        .new-Item
+                          .body-new-Item
+                            .row
+                              .col-lg-3
+                                .new-Item-image
+                                  img(src="images/glory/Filter/15.png", alt="")
+                              .col-lg-5
+                                .new-Item-Detils
+                                  a(href="")
+                                    h4 Jasmine Flower Perfume
+                                    span Joon
+                                  .price
+                                    .new-price $599.99
+                                    .old-price
+                                      span $799.99
+                              .col-4.text-center  
+                                a.read-more.add-Card(href="") Add to Card
+                                  span.pe-7s-cart  
+                                button.btn.btn-outline-danger.mt-2(type="button") 
+                                  i.fas.fa-trash-alt
+                                  |  Deleat              
+                      //End Wish Lists  
+                    #list-settings.tab-pane.fade(role='tabpanel' aria-labelledby='list-settings-list') 
+                      //Start Recommended
+                      .myOrder.p-3
+                        .shoping-Now.text-center.p-5
+                          p.lead Make sure to buy your groceries and daily needs
+                          a.btn.btn-lg.btn-primary(href="") Buy Now
+
+                      //End Recommended
+                    #list-Account.tab-pane.fade(role='tabpanel' aria-labelledby='list-Account-list') 
+                      //Start Account Settings
+                      h4 Account Settings
+                      .myOrder
+                        .Account-Information.p-3
+                          .row
+                            .col-lg-10
+                              h5 Account Information
+                              p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur ad cum assumenda deleniti voluptate incidunt commodi officia modi quidem quibusdam dicta, atque sunt illum quos, architecto vero, perferendis id praesentium.
+                              ul.list-unstyled
+                                li 
+                                  strong.pr-5 Name : 
+                                  span Mostafa AboBaker
+                                li 
+                                  strong.pr-5 Email : 
+                                  span Mostafa_AboBaker@yahoo.ocm
+                                li 
+                                  strong.pr-5 Password : 
+                                  span *********
+                            .col-lg-2.text-right
+                              a.btn.btn-secondary(href="") 
+                                i.fas.fa-edit 
+                                |   Edit
+                        .Personal-Information.border-top.p-3  
+                          .row
+                            .col-lg-10
+                              h5 Personal Information
+                              ul.list-unstyled
+                                li 
+                                  strong.pr-5 User Name : 
+                                  span Mostafa AboBaker
+                                li 
+                                  strong.pr-5 Gender : 
+                                  span Male
+                                li 
+                                  strong.pr-5 Birthdate : 
+                                  span 0000/00/00
+                            .col-lg-2.text-right
+                              a.btn.btn-secondary(href="") 
+                                i.fas.fa-edit 
+                                |   Edit
+                        .Payment.border-top.p-3  
+                          h5 Saved Payment Method  
+                          p ****9006  (Expires: 04/2020) [ 
+                            a(href="")  Delete 
+                            |  ]
+                      //End Account Settings
+          
+            
+    // End accountProcenal-page
+
+    //Start Footer
+    include include/Footer.pug
+    include include/model.pug
+    include include/script.pug
+    script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")

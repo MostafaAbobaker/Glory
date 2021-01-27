@@ -32,6 +32,13 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
+    <!-- Start Loader-->
+    <div class="box-loder"> 
+      <div class="box-logo filter">
+        <div class="content"><img src="images/GloryLogo.png" alt=""/></div>
+      </div>
+    </div>
+    <!-- End Loader-->
     <!-- start Header-->
     <!--Start Top Header-->
     <header class="top-header">
@@ -217,11 +224,12 @@
               <li class="Setting drob"><a href="#"> 
                   <!--i.fas.fa-cog.fa.fw--><span class="pe-7s-config"></span>Setting</a>
                 <ul class="list-unstyled drob-down">
-                  <li><a href="#">my account</a></li>
-                  <li><a href="#">my favorite                                 </a></li>
+                  <li><a href="accountProcenal.html">my account</a></li>
+                  <li><a href="accountProcenal.html">my favorite                                 </a></li>
                   <li><a href="#"> <i class="fas fa-sign-out-alt fa-fw"></i> sign out                          </a></li>
                 </ul>
               </li>
+              <li class="login"><a href="Login.html"> <i class="fas fa-sign-in-alt fa-fw"> </i> Sign In</a></li>
             </ul>
           </div>
         </div>
@@ -241,7 +249,49 @@
             <li class=" nav-item "><a class="nav-link" href="gifts.html">gifts</a></li>
             <li class="nav-item  active"><a class="nav-link" href="Blog.html">Blog</a></li>
             <li class=" nav-item "><a class="nav-link" href="contactUs.html">contact us</a></li>
-            <li class="nav-item basket"><a class="nav-link shopping-cart" href="#"> <span class="pe-7s-cart"><span class="badge badge-success">3</span></span></a></li>
+            <li class="nav-item basket drob"><a class="nav-link shopping-cart" href="#"> <span class="pe-7s-cart"><span class="badge badge-success">3</span></span></a>
+              <ul class="list-unstyled drob-down">
+                <li><a href="#"> 
+                    <div class="card-ship list">
+                      <div class="image"><img src="images/glory/Filter/9.png" alt=""/></div>
+                      <div class="card-ship-body">
+                        <div class="info-card-ship"><span class="name-prodect text-center" href="">Jasmine Flower Perfume</span></div>
+                        <div class="prise text-center">
+                          <div class="old">
+                            <del>$ 69.99</del>
+                          </div>
+                          <div class="new">$ 50.00</div>
+                        </div>
+                      </div>
+                    </div></a></li>
+                <li><a href="#"> 
+                    <div class="card-ship list">
+                      <div class="image"><img src="images/glory/Filter/18.png" alt=""/></div>
+                      <div class="card-ship-body">
+                        <div class="info-card-ship"><span class="name-prodect text-center" href="">Jasmine Flower Perfume</span></div>
+                        <div class="prise text-center">
+                          <div class="old">
+                            <del>$ 69.99</del>
+                          </div>
+                          <div class="new">$ 50.00</div>
+                        </div>
+                      </div>
+                    </div></a></li>
+                <li><a href="#"> 
+                    <div class="card-ship list">
+                      <div class="image"><img src="images/glory/Filter/27.png" alt=""/></div>
+                      <div class="card-ship-body">
+                        <div class="info-card-ship"><span class="name-prodect text-center" href="">Jasmine Flower Perfume</span></div>
+                        <div class="prise text-center">
+                          <div class="old">
+                            <del>$ 69.99</del>
+                          </div>
+                          <div class="new">$ 50.00</div>
+                        </div>
+                      </div>
+                    </div></a></li><a class="read-more add-Card" href="card.html">Checkout<span class="pe-7s-cart">       </span></a>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -400,6 +450,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- owl carousel-->
     <script src="js/owl.carousel.min.js"></script>
+    <!-- owl carousel-->
+    <script src="js/slick.min.js"></script>
     <!-- Wow Scroll-->
     <script src="js/wow.min.js"></script>
     <!-- My Script JS & JQuery-->

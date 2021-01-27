@@ -1,15 +1,18 @@
 @import "content/header";
 @import "content/footer";
 @import "content/navbar";
-@import "content/home";
+@import "content/loader";
 @import "content/model";
 @import "content/Register";
 @import "content/item";
 
 @import "Page/home";
 @import "Page/login";
+@import "Page/accountProcenal";
+@import "Page/card";
 @import "Page/about";
 @import "Page/products";
+@import "Page/ProductsInfo";
 @import "Page/gifts";
 @import "Page/clinical";
 @import "Page/blog";
@@ -18,7 +21,7 @@
 
 
 body {
-  
+  overflow: hidden;
   font-family: 'Roboto', sans-serif;
   font-family: 'Castoro', serif;
 
@@ -93,3 +96,56 @@ a.read-more {
   }
 }
 /* End Button Read More */
+
+/* Start Rating */
+#full-stars-example-two {
+
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  .rating-group {
+    display: inline-flex;
+  }
+  
+  /* make hover effect work properly in IE */
+  .rating__icon {
+    pointer-events: none;
+  }
+  
+  /* hide radio inputs */
+  .rating__input {
+   position: absolute !important;
+   left: -9999px !important;
+  }
+  
+  /* hide 'none' input from screenreaders */
+  .rating__input--none {
+    display: none
+  }
+
+  /* set icon padding and size */
+  .rating__label {
+    cursor: pointer;
+    padding: 0 0.1em;
+    font-size: 1rem;
+  }
+  
+  /* set default star color */
+  .rating__icon--star {
+    color: orange;
+  }
+
+  /* if any input is checked, make its following siblings grey */
+  .rating__input:checked ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+  
+  /* make all stars orange on rating group hover */
+  .rating-group:hover .rating__label .rating__icon--star {
+    color: orange;
+  }
+
+  /* make hovered input's following siblings grey on hover */
+  .rating__input:hover ~ .rating__label .rating__icon--star {
+    color: #ddd;
+  }
+}
+/* End Rating */

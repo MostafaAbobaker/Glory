@@ -45,46 +45,50 @@ $( function() {
     }
   });  
   /*End  Add To Cart */
-
+  /*Start Login  */
+      
+    $('#sign-up-btn').click(function() {
+      $('.containerz').addClass('sign-up-mode');
+    });
+    $('#sign-in-btn').click(function() {
+      $('.containerz').removeClass('sign-up-mode');
+    });
+  /*End Login  */
   /* Start Scroll Nav Bar */
   $(window).scroll(function () {
-    if($(this).scrollTop() > 100)
-    {
-        if (!$('.navbar').hasClass('fixed-top'))
-        {
-            $('.navbar').stop().addClass('fixed-top').css('top', '-50px').animate(
-                {
+    if($(this).scrollTop() > 100) {
+        if (!$('.navbar').hasClass('fixed-top')) {
+            $('.navbar').stop().addClass('fixed-top').css('top', '-50px').animate({
                     'top': '0px'
                 }, 500);
         }
-    }
-    else
-    {
+    } else {
         $('.navbar').removeClass('fixed-top');
     }
   });
   /* End Scroll Nav Bar */
 
-  /* Start Filter Prodect Glory */
+  /* Start Filter Aside products*/
+    /* Start Filter Prodect Glory */
   $('#Glory').click(function(){
-    if($(this).prop("checked") == true){
+    if($(this).prop("checked") == true && $('#Joon').prop("checked") == false){
         $('#ourProducts .Joon').slideUp(500);
-    }
-    else {
+    } else {
       $('#ourProducts .Joon').slideDown(500);
     }
   });
    /* End Filter Prodect Glory */
     /* Start Filter Prodect Joon */
   $('#Joon').click(function(){
-    if($(this).prop("checked") == true){
+    if($(this).prop("checked") == true && $('#Glory').prop("checked") == false){
         $('#ourProducts .Glory').slideUp(500);
-    }
-    else {
+    } else {
       $('#ourProducts .Glory').slideDown(500);
     }
   });
-  /* End Filter Prodect Joon */
+    /* End Filter Prodect Joon */
+  /* End Filter Aside products*/
+
   /* Start Filter Grid || Row Prodect */
   $('#rows').click(function () {
     $(this).addClass('active').siblings().removeClass('active');
@@ -96,6 +100,7 @@ $( function() {
   });
   /* End Filter Grid || Row Prodect */
 
+  /* Start Input Form Contact us */
   $('.input-control').on('blur', function () {
     if ($(this).val() !== "") {
       $(this).parent().addClass('focus');
@@ -103,6 +108,7 @@ $( function() {
       $(this).parent().removeClass('focus');
     }
   });
+  /* End Input Form Contact us */
 
   /*Start Image Change Page clinical  */
   $('#shangPhoto .one').click(function () {
@@ -128,6 +134,46 @@ $( function() {
   });
   /*End Image Change Page clinical  */
 
+  /* Start Slider Info Prodect */
+  $('#slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+    
+
+  });
+  $('#slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
+  });
+  /* End Slider Info Prodect */
+
+  /* Start Filter Color */
+  $('#color span').click(function () {
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+  /* End Filter Color */
+  /* Start Count */
+  $('#count .minus').click(function () {
+    var inputNumberminus = parseInt($(this).next('input').val());
+    if(inputNumberminus > 1 ) {
+      $(this).next('input').val(inputNumberminus - 1)
+    }
+  });
+  $('#count .plus').click(function () {
+    var inputNumberplus = parseInt($(this).parent('#count').find('input').val());
+    if(inputNumberplus < 100 ) {
+      $(this).parent('#count').find('input').val(inputNumberplus + 1)
+    }
+  });
+  
+  /* End  Count */
   //Wow Scroll
   var wow = new WOW(
     {
@@ -163,20 +209,20 @@ $( function() {
         }
     }
   });
+}); 
+
+
+
+
+
+/*Loading*/
+$(window).on('load', function () {
+  $("body").css("overflow", "auto");
+  $(".box-loder").fadeOut(5000);
 });
-
-
-
+/*End Loading*/
 /* Start Image Change Page clinical*/
-$(window).load(function() {
- 
- $("#container1").twentytwenty(); 
-  
- 
+$(window).on('load',function() {
+  $("#container1").twentytwenty(); 
 });
 /* End Image Change Page clinical*/
-
-
-/* Start Login */
-
-/* End Login */

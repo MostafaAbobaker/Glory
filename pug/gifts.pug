@@ -3,7 +3,11 @@
 html(lang="en")
   head
     include include/head.pug
+    
   body
+    // Start Loader
+    include include/loading.pug
+    // End Loader
     // start Header
     include include/header.pug
     link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")

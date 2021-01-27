@@ -4,6 +4,9 @@ html(lang="en")
   head
     include include/head.pug
   body
+    // Start Loader
+    include include/loading.pug
+    // End Loader
     // start Header
     include include/header.pug
     //end Header
@@ -110,15 +113,18 @@ html(lang="en")
                         .card-ship
                           .image
                             img(src='images/glory/Filter/' + ++n +'.png', alt='')
+                            .form-group.form-check
+                              input.form-check-input(type='checkbox' title="favorite" id= 'exampleCheck' + n)
+                              label(for='exampleCheck' + n)
                           .card-ship-body
                             .info-card-ship
                               .prand.text-center #{n < 27 ? 'Joon'  : 'Glory'} 
-                              a.name-prodect.text-center(href="") Jasmine Flower Perfume
+                              a.name-prodect.text-center(href="productsInfo.html") Jasmine Flower Perfume
                             .prise.text-center
                               .old
                                 del $ 69.99
                               .new $ 50.00
-                            a.read-more.add-Card(href="#") Add to Card
+                            a.read-more.add-Card(href="") Add to Card
                               span.pe-7s-cart
                   
     // End products

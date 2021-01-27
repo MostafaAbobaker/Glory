@@ -1,0 +1,194 @@
+- var pageTitl = "";
+//DOCTYPE html
+html(lang="en")
+  head
+    include include/head.pug
+  body
+    // Start Loader
+    include include/loading.pug
+    // End Loader
+    // start Header
+    include include/header.pug
+    //end Header
+    //Start  breadcrumb
+    nav.breadcrumb-nav(aria-label='breadcrumb')
+      .container
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='Index.html') Home
+          li.breadcrumb-item.active(aria-current='page') Card
+    //End breadcrumb
+    // Start Blog
+    section.card-page
+      .container
+        .row
+          .col-lg-8
+            .card-detal
+              .container-fluid
+                .row.tables
+                  .col-lg-5
+                    h4.thead Product
+                  .col-lg-2.text-center
+                    h4.thead Price
+                  .col-lg-3.text-center
+                    h4.thead Quantity
+                  .col-lg-2.text-center
+                    h4.thead Total
+                .row
+                  .col-lg-12
+                    .card-product
+                      .image
+                        img(src="images/glory/Filter/30.png", alt="")
+                      .info-card-ship
+                        a.name-prodect.text-center(href="productsInfo.html") Jasmine Flower Perfume
+                        .prand.text-center Glory
+                      .prise
+                        .old
+                          del $ 69.99
+                        .new $ 50.00  
+                      #count.count
+                        button.btn.minus
+                          i.fas.fa-minus
+                        input(type="number" value='1' min="1" max='100')
+                        button.btn.plus
+                          i.fas.fa-plus 
+                      h4.total-price-product $401.90
+                      .option
+                        .form-group.form-check
+                          input.form-check-input(type='checkbox' title="favorite" id= 'exampleCheck' )
+                          label(for='exampleCheck' ) Add To Favorite
+                        .delet 
+                          a(href="") Deleat Item 
+                            i.fas.fa-trash-alt.fa-lg
+                  .col-lg-12
+                    .card-product
+                      .image
+                        img(src="images/glory/Filter/42.png", alt="")
+                      .info-card-ship
+                        a.name-prodect.text-center(href="productsInfo.html") Jasmine Flower Perfume
+                        .prand.text-center Glory
+                      .prise
+                        .old
+                          del $ 69.99
+                        .new $ 50.00  
+                      #count.count
+                        button.btn.minus
+                          i.fas.fa-minus
+                        input(type="number" value='1' min="1" max='100')
+                        button.btn.plus
+                          i.fas.fa-plus 
+                      h4.total-price-product $401.90
+                      .option
+                        .form-group.form-check
+                          input.form-check-input(type='checkbox' title="favorite" id= 'exampleCheck1' )
+                          label(for='exampleCheck1' ) Add To Favorite
+                        .delet 
+                          a(href="") Deleat Item 
+                            i.fas.fa-trash-alt.fa-lg
+                  .col-lg-12
+                    .card-product
+                      .image
+                        img(src="images/glory/Filter/10.png", alt="")
+                      .info-card-ship
+                        a.name-prodect.text-center(href="productsInfo.html") Jasmine Flower Perfume
+                        .prand.text-center Glory
+                      .prise
+                        .old
+                          del $ 69.99
+                        .new $ 50.00  
+                      #count.count
+                        button.btn.minus
+                          i.fas.fa-minus
+                        input(type="number" value='1' min="1" max='100')
+                        button.btn.plus
+                          i.fas.fa-plus 
+                      h4.total-price-product $401.90
+                      .option
+                        .form-group.form-check
+                          input.form-check-input(type='checkbox' title="favorite" id= 'exampleCheck2' )
+                          label(for='exampleCheck2' ) Add To Favorite
+                        .delet 
+                          a(href="") Deleat Item 
+                            i.fas.fa-trash-alt.fa-lg
+
+
+                        
+          .col-lg-4
+            .total
+              h4 Total products
+              .total-body
+                ul.list-unstyled
+                  li 
+                    span Subtotal 
+                      span.Qty (2Item)
+                    span.price 599.99
+                      span  EGP
+                  li 
+                    span Shipping 
+                    span.price 10
+                      span  EGP
+                  li 
+                    span Total  
+                    span.price 599.99
+                      span  EGP
+            .total.mt-3
+              h4 Shipping Options
+              .total-body
+                .form-group
+                  label(for='exampleFormControlSelect1') Select Your Delivery Address
+                  select#exampleFormControlSelect1.form-control
+                    option 22 El Amal st, elmadina , Cairo ,Egypt.
+                    option 31 El Amal st, elmadina , Cairo ,Egypt.
+                    option 07 El Amal st, elmadina , Cairo ,Egypt.
+                button.btn.btn-outline-success.btn-block(type='button') 
+                  i.fas.fa-plus
+                  |  Add New Address
+          
+
+            .total.mt-3
+              h4 Payment Method
+              .total-body
+                h5.custom-control.custom-radio.pb-2.border-bottom
+                  input#customRadio1.custom-control-input(type='radio' name='customRadio')
+                  label.custom-control-label(for='customRadio1') Cash On Delivery
+                  span.icon.float-right
+                    img(src="images/bank/cashOnDelivery.svg", alt="" width="40")  
+                h5.custom-control.custom-radio.pb-2.border-bottom
+                  input#customRadio7.custom-control-input(type='radio' name='customRadio')
+                  label.custom-control-label(for='customRadio7') Credit Card Machine
+                  span.icon.float-right
+                    img(src="images/bank/atm.svg", alt="" width="30")  
+                h5.custom-control.custom-radio.pb-2.border-bottom
+                  input#customRadio2.custom-control-input(type='radio' name='customRadio')
+                  label.custom-control-label(for='customRadio2') Credit or Debit Cards
+                  //span.icon.float-right
+                    
+                  span.icon.float-right
+                    img.pr-2(src="images/bank/Visa.svg", alt="" width="40")
+                    img.px-1(src="images/bank/mastercard.svg", alt="" width="40")
+                
+                h5
+                  .input-group.mb-3
+                    .input-group-prepend
+                      span#basic-addon1.input-group-text 
+                        i.fas.fa-mobile-alt
+                    input.form-control(type='text' placeholder='Please Write Your Num Phone' aria-label='Username' aria-describedby='basic-addon1')
+                a.btn.btn-success.btn-lg.btn-block(href="") Proceed to Checkout
+                    
+            button.btn.btn-outline-info.btn-lg.btn-block.mt-3(type='button' data-toggle='collapse' data-target='#collapseExample' aria-expanded='false' aria-controls='collapseExample')
+              | Add Coupon
+            #collapseExample.collapse
+              .card.card-body
+                .input-group.mb-3
+                  input.form-control(type='text' placeholder="Add Your Coupon" aria-label="Recipient's username" aria-describedby='basic-addon2')
+                  .input-group-append
+                    button#basic-addon2.input-group-text.btn.btn-warning(type="submit") Add Coupon
+
+                        
+        
+    // End Blog
+
+    //Start Footer
+    include include/Footer.pug
+    include include/model.pug
+    include include/script.pug

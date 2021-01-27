@@ -4,6 +4,9 @@ html(lang="en")
   head
     include include/head.pug
   body
+    // Start Loader
+    include include/loading.pug
+    // End Loader
     // start Header
     include include/header.pug
     //end Header
@@ -21,7 +24,9 @@ html(lang="en")
               .input-field
                 i.fas.fa-lock
                 input(type='password', placeholder='Password')
-              input.btn.solid(type='submit', value='Login')
+              .form-groub
+                a.read-more(href="#") Login
+              //-input.btn.solid(type='submit', value='Login')
               p.social-text Or Sign in with social platforms
               .social-media
                 a.social-icon(href='#')
@@ -43,7 +48,9 @@ html(lang="en")
               .input-field
                 i.fas.fa-lock
                 input(type='password', placeholder='Password')
-              input.btn(type='submit', value='Sign up')
+              .form-groub
+                a.read-more(href="#") Sign up 
+              //-input.btn(type='submit', value='Sign up')
               p.social-text Or Sign up with social platforms
               .social-media
                 a.social-icon(href='#')
@@ -61,7 +68,8 @@ html(lang="en")
               p
                 | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
                 | ex ratione. Aliquid!
-              button#sign-up-btn.btn.transparent
+              a#sign-up-btn.read-more(href="#") Sign up  
+              //-button#sign-up-btn.btn.transparent
                 | Sign up
             img.image(src='img/log.svg', alt='')
           .panel.right-panel
@@ -70,8 +78,10 @@ html(lang="en")
               p
                 | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
                 | laboriosam ad deleniti.
-              button#sign-in-btn.btn.transparent
+              a#sign-in-btn.read-more(href="#") Sign in  
+              //-button#sign-in-btn.btn.transparent
                 | Sign in
+              
             img.image(src='img/register.svg', alt='')
 
             
@@ -82,13 +92,4 @@ html(lang="en")
     include include/model.pug
     include include/script.pug
     script(src="https://kit.fontawesome.com/64d58efce2.js")
-    script.
-      const sign_in_btn = document.querySelector("#sign-in-btn");
-      const sign_up_btn = document.querySelector("#sign-up-btn");
-      const container = document.querySelector(".containerz");
-      sign_up_btn.addEventListener("click", () => {
-      container.classList.add("sign-up-mode");
-      });
-      sign_in_btn.addEventListener("click", () => {
-      container.classList.remove("sign-up-mode");
-      });
+    

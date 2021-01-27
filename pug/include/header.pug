@@ -50,14 +50,14 @@ header.top-header
               | Setting
             ul.list-unstyled.drob-down
               li
-                a(href="#") my account
+                a(href="accountProcenal.html") my account
               li
-                a(href="#") my favorite                                 
+                a(href="accountProcenal.html") my favorite                                 
               li
                 a(href="#") 
                   i.fas.fa-sign-out-alt.fa-fw
                   |  sign out                          
-          //-li.login
+          li.login
             a(href="Login.html") 
               i.fas.fa-sign-in-alt.fa-fw 
               |  Sign In
@@ -87,11 +87,29 @@ nav.navbar.navbar-expand-lg.navbar-light
           a.nav-link(href='Blog.html') Blog
         li(class = pageTitl === "contact" ? "nav-item  active" : " nav-item " )
           a.nav-link(href='contactUs.html') contact us
-        li.nav-item.basket
+        li.nav-item.basket.drob
           a.nav-link.shopping-cart(href='#') 
             span.pe-7s-cart
               span.badge.badge-success 3
-
+          ul.list-unstyled.drob-down
+              - var n = 0;
+                while n < 3
+                  li
+                    a(href="#") 
+                      .card-ship.list
+                        .image
+                          img(src='images/glory/Filter/' + ++n*9  +'.png', alt='')
+                        .card-ship-body
+                          .info-card-ship
+                            
+                            span.name-prodect.text-center(href="") Jasmine Flower Perfume
+                          .prise.text-center
+                            .old
+                              del $ 69.99
+                            .new $ 50.00
+              a.read-more.add-Card(href="card.html") Checkout
+                  span.pe-7s-cart        
+              
       
     
 

@@ -3,7 +3,7 @@ header.top-header {
   font-size: 14px;
   border-bottom: 1px solid #f1f1f1;
   position: relative;
-  z-index: 2;
+  z-index: 99999;
   /* position: absolute;
   top: 0;
   left: 0;
@@ -142,9 +142,14 @@ nav.navbar {
   transition: all 0.4s ease-in-out;
   will-change: transform;
   transition: transform 200ms linear;
-  
+  z-index: 9999;
+ 
   background-color: #fff;
-  
+  /* position: absolute;
+  top: 45px;
+  width: 100%;
+  left: 0;
+  z-index: 5; */
   .navbar-nav {
     margin: 10px 0;
     .nav-item:not(.basket){
@@ -237,6 +242,94 @@ nav.navbar {
           }
         }
         
+      }
+      .drob-down {
+        background: #fff;
+        right: 0;
+        opacity: 0;
+        padding: 10px;
+        position: absolute;
+        top: 100%;
+        transform: scaleY(0);
+        transform-origin: 0 0 0;
+        width: 300px;
+        visibility: hidden;
+        z-index: 9999;
+        transition: 0.5s;
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.1);
+        li {
+          margin: 0;
+          margin-bottom: 5px;
+          padding: 0;
+          //border-bottom: 1px solid #ccc;
+          a {
+            display: block;
+            font-size: 14px;
+            font-weight: 400;
+            //padding: 6px 10px;
+            text-transform: capitalize;
+            text-align: left;
+            text-decoration: none;
+            .card-ship {
+              margin: 0;
+              //border: none;
+              &.list {
+                .image {
+                  width: 30%;
+                }
+                .card-ship-body {
+                  width: 70%;
+                }
+              }
+              &:hover {
+                box-shadow: none;
+              }
+            }
+            
+          }
+          &:not(:last-child) a{
+            border-bottom: 1px solid #f2f2f2;
+          }
+        }
+        .add-Card {
+          margin-bottom: 10px;
+          position: relative;
+          left: 50%;
+          margin-left: auto;
+          transform: translateX(-50%);
+          
+          span.pe-7s-cart {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-size: 25px;
+            z-index: 9;
+      
+          }
+          &::before {
+            display: none;
+          }
+        }
+      }
+      &.drob {
+        position: relative;
+        /* &::after {
+          content: '\f107';
+          font-family: "Font Awesome 5 Free"; 
+          font-weight: 900;
+          color:  #323232;
+          transition: all 0.3s ease-in-out;
+        } */
+        &:hover::after{
+          color: #F9B645;
+        }
+        &:hover .drob-down {
+          opacity: 1;
+          visibility: visible;
+          -webkiit-transform: scaleY(1);
+          -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+        }
       }
     }
   }
